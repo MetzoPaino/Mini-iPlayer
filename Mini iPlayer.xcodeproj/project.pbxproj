@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFA9B20B8521900E3918D /* AppDelegate.swift */; };
+		74CFFA9E20B8521900E3918D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFA9D20B8521900E3918D /* ViewController.swift */; };
+		74CFFAA120B8521900E3918D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFA9F20B8521900E3918D /* Main.storyboard */; };
+		74CFFAA320B8521A00E3918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA220B8521A00E3918D /* Assets.xcassets */; };
+		74CFFAA620B8521A00E3918D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */; };
+		74CFFAB120B8521A00E3918D /* Mini_iPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFAB020B8521A00E3918D /* Mini_iPlayerTests.swift */; };
+		74CFFABC20B8521A00E3918D /* Mini_iPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFABB20B8521A00E3918D /* Mini_iPlayerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74CFFAAD20B8521A00E3918D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CFFA9020B8521900E3918D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74CFFA9720B8521900E3918D;
+			remoteInfo = "Mini iPlayer";
+		};
+		74CFFAB820B8521A00E3918D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CFFA9020B8521900E3918D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74CFFA9720B8521900E3918D;
+			remoteInfo = "Mini iPlayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74CFFA9820B8521900E3918D /* Mini iPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini iPlayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CFFA9B20B8521900E3918D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74CFFA9D20B8521900E3918D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74CFFAA020B8521900E3918D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74CFFAA220B8521A00E3918D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74CFFAA520B8521A00E3918D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74CFFAA720B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CFFAAC20B8521A00E3918D /* Mini iPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini iPlayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CFFAB020B8521A00E3918D /* Mini_iPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_iPlayerTests.swift; sourceTree = "<group>"; };
+		74CFFAB220B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini iPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CFFABB20B8521A00E3918D /* Mini_iPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mini_iPlayerUITests.swift; sourceTree = "<group>"; };
+		74CFFABD20B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74CFFA9520B8521900E3918D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CFFAA920B8521A00E3918D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CFFAB420B8521A00E3918D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74CFFA8F20B8521900E3918D = {
+			isa = PBXGroup;
+			children = (
+				74CFFA9A20B8521900E3918D /* Mini iPlayer */,
+				74CFFAAF20B8521A00E3918D /* Mini iPlayerTests */,
+				74CFFABA20B8521A00E3918D /* Mini iPlayerUITests */,
+				74CFFA9920B8521900E3918D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74CFFA9920B8521900E3918D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74CFFA9820B8521900E3918D /* Mini iPlayer.app */,
+				74CFFAAC20B8521A00E3918D /* Mini iPlayerTests.xctest */,
+				74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74CFFA9A20B8521900E3918D /* Mini iPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				74CFFA9B20B8521900E3918D /* AppDelegate.swift */,
+				74CFFA9D20B8521900E3918D /* ViewController.swift */,
+				74CFFA9F20B8521900E3918D /* Main.storyboard */,
+				74CFFAA220B8521A00E3918D /* Assets.xcassets */,
+				74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */,
+				74CFFAA720B8521A00E3918D /* Info.plist */,
+			);
+			path = "Mini iPlayer";
+			sourceTree = "<group>";
+		};
+		74CFFAAF20B8521A00E3918D /* Mini iPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				74CFFAB020B8521A00E3918D /* Mini_iPlayerTests.swift */,
+				74CFFAB220B8521A00E3918D /* Info.plist */,
+			);
+			path = "Mini iPlayerTests";
+			sourceTree = "<group>";
+		};
+		74CFFABA20B8521A00E3918D /* Mini iPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74CFFABB20B8521A00E3918D /* Mini_iPlayerUITests.swift */,
+				74CFFABD20B8521A00E3918D /* Info.plist */,
+			);
+			path = "Mini iPlayerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74CFFA9720B8521900E3918D /* Mini iPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CFFAC020B8521A00E3918D /* Build configuration list for PBXNativeTarget "Mini iPlayer" */;
+			buildPhases = (
+				74CFFA9420B8521900E3918D /* Sources */,
+				74CFFA9520B8521900E3918D /* Frameworks */,
+				74CFFA9620B8521900E3918D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mini iPlayer";
+			productName = "Mini iPlayer";
+			productReference = 74CFFA9820B8521900E3918D /* Mini iPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74CFFAAB20B8521A00E3918D /* Mini iPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CFFAC320B8521A00E3918D /* Build configuration list for PBXNativeTarget "Mini iPlayerTests" */;
+			buildPhases = (
+				74CFFAA820B8521A00E3918D /* Sources */,
+				74CFFAA920B8521A00E3918D /* Frameworks */,
+				74CFFAAA20B8521A00E3918D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74CFFAAE20B8521A00E3918D /* PBXTargetDependency */,
+			);
+			name = "Mini iPlayerTests";
+			productName = "Mini iPlayerTests";
+			productReference = 74CFFAAC20B8521A00E3918D /* Mini iPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74CFFAB620B8521A00E3918D /* Mini iPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CFFAC620B8521A00E3918D /* Build configuration list for PBXNativeTarget "Mini iPlayerUITests" */;
+			buildPhases = (
+				74CFFAB320B8521A00E3918D /* Sources */,
+				74CFFAB420B8521A00E3918D /* Frameworks */,
+				74CFFAB520B8521A00E3918D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74CFFAB920B8521A00E3918D /* PBXTargetDependency */,
+			);
+			name = "Mini iPlayerUITests";
+			productName = "Mini iPlayerUITests";
+			productReference = 74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74CFFA9020B8521900E3918D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "William Robinson";
+				TargetAttributes = {
+					74CFFA9720B8521900E3918D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					74CFFAAB20B8521A00E3918D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 74CFFA9720B8521900E3918D;
+					};
+					74CFFAB620B8521A00E3918D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 74CFFA9720B8521900E3918D;
+					};
+				};
+			};
+			buildConfigurationList = 74CFFA9320B8521900E3918D /* Build configuration list for PBXProject "Mini iPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74CFFA8F20B8521900E3918D;
+			productRefGroup = 74CFFA9920B8521900E3918D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74CFFA9720B8521900E3918D /* Mini iPlayer */,
+				74CFFAAB20B8521A00E3918D /* Mini iPlayerTests */,
+				74CFFAB620B8521A00E3918D /* Mini iPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CFFA9620B8521900E3918D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CFFAA620B8521A00E3918D /* LaunchScreen.storyboard in Resources */,
+				74CFFAA320B8521A00E3918D /* Assets.xcassets in Resources */,
+				74CFFAA120B8521900E3918D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CFFAAA20B8521A00E3918D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CFFAB520B8521A00E3918D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CFFA9420B8521900E3918D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CFFA9E20B8521900E3918D /* ViewController.swift in Sources */,
+				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CFFAA820B8521A00E3918D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CFFAB120B8521A00E3918D /* Mini_iPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CFFAB320B8521A00E3918D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CFFABC20B8521A00E3918D /* Mini_iPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74CFFAAE20B8521A00E3918D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74CFFA9720B8521900E3918D /* Mini iPlayer */;
+			targetProxy = 74CFFAAD20B8521A00E3918D /* PBXContainerItemProxy */;
+		};
+		74CFFAB920B8521A00E3918D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74CFFA9720B8521900E3918D /* Mini iPlayer */;
+			targetProxy = 74CFFAB820B8521A00E3918D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74CFFA9F20B8521900E3918D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CFFAA020B8521900E3918D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CFFAA520B8521A00E3918D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74CFFABE20B8521A00E3918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74CFFABF20B8521A00E3918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74CFFAC120B8521A00E3918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = "Mini iPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.williamrobinson.Mini-iPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74CFFAC220B8521A00E3918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = "Mini iPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.williamrobinson.Mini-iPlayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74CFFAC420B8521A00E3918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = "Mini iPlayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.williamrobinson.Mini-iPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini iPlayer.app/Mini iPlayer";
+			};
+			name = Debug;
+		};
+		74CFFAC520B8521A00E3918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = "Mini iPlayerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.williamrobinson.Mini-iPlayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini iPlayer.app/Mini iPlayer";
+			};
+			name = Release;
+		};
+		74CFFAC720B8521A00E3918D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = "Mini iPlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.williamrobinson.Mini-iPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mini iPlayer";
+			};
+			name = Debug;
+		};
+		74CFFAC820B8521A00E3918D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				INFOPLIST_FILE = "Mini iPlayerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.williamrobinson.Mini-iPlayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mini iPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74CFFA9320B8521900E3918D /* Build configuration list for PBXProject "Mini iPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CFFABE20B8521A00E3918D /* Debug */,
+				74CFFABF20B8521A00E3918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CFFAC020B8521A00E3918D /* Build configuration list for PBXNativeTarget "Mini iPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CFFAC120B8521A00E3918D /* Debug */,
+				74CFFAC220B8521A00E3918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CFFAC320B8521A00E3918D /* Build configuration list for PBXNativeTarget "Mini iPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CFFAC420B8521A00E3918D /* Debug */,
+				74CFFAC520B8521A00E3918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CFFAC620B8521A00E3918D /* Build configuration list for PBXNativeTarget "Mini iPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CFFAC720B8521A00E3918D /* Debug */,
+				74CFFAC820B8521A00E3918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74CFFA9020B8521900E3918D /* Project object */;
+}
