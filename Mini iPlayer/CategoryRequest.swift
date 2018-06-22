@@ -11,4 +11,5 @@ import Foundation
 struct CategoryRequest: Codable {
     let categories: [Category]
     
+    
 }

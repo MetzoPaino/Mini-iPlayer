@@ -10,31 +10,48 @@ import Foundation
 
 class FileCategoryProvider {
 
-    private var file: Data?
-    
-    init(fileName: String) {
+    private let fileName: String
+    private var url: URL {
         let bundle = Bundle(for: type(of: self))
         let urlpath = bundle.path(forResource: fileName, ofType: "json")
-        let url = URL(fileURLWithPath: urlpath!)
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            self.file = data
-            
-            
-        }
+        return URL(fileURLWithPath: urlpath!)
     }
     
-    func parseJSONFile() {
+    init(fileName: String) {
         
-        let json = try? JSONSerialization.jsonObject(with: file!, options: [])
-        print(json)
+        self.fileName = fileName
+    }
+    
+    func parseJSONFile(completion: @escaping ([Category])->()) {
+        
+        URLSession.shared.dataTask(with: self.url) { (data, response, error) in
+            
+            guard let data = data else { return }
+            do {
+                let decoder = JSONDecoder()
+                let gitData = try decoder.decode(CategoryRequest.self, from: data)
+                print(gitData)
+                
+                completion(gitData.categories)
+
+            } catch let err {
+                print("Err", err)
+                completion([Category]())
+            }
+            
+            
+//            if let data = data {
+//                let json = try? JSONSerialization.jsonObject(with: data, options: [])
+//                print(json)
+//            } else {
+//                print("No Data")
+//            }
+        }.resume()
     }
 }
 
 extension FileCategoryProvider: CategoriesProvider {
-    func getCategories() -> [Category] {
-        parseJSONFile()
-        
-        return [Category(id: "foo", name: "Arts")]
+    func getCategories(completion: @escaping ([Category])->()) {
+        let categories = parseJSONFile(completion: completion)
     }
 }
