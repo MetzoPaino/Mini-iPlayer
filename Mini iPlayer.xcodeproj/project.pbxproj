@@ -43,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7419044620BEB4E200766E67 /* IBLCategories */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IBLCategories; path = ../../../../../Desktop/IBLCategories; sourceTree = "<group>"; };
+		7419044620BEB4E200766E67 /* IBLCategories */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IBLCategories; path = ../IBLCategories; sourceTree = "<group>"; };
 		7419044A20BEB65500766E67 /* FileCategoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCategoryProvider.swift; sourceTree = "<group>"; };
 		7419044C20BEB99000766E67 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7419044E20BEB9EF00766E67 /* CategoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesProvider.swift; sourceTree = "<group>"; };
