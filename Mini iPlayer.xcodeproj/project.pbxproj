@@ -17,11 +17,17 @@
 		7449CAB820DD530F0090A3A9 /* TestCategory2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7449CAB620DD52E20090A3A9 /* TestCategory2.json */; };
 		7456899320BED1A0002C48DB /* TestCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 7456899220BED192002C48DB /* TestCategory.json */; };
 		7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456899520BED57A002C48DB /* CategoryRequest.swift */; };
+		74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* Episode.swift */; };
+		74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */; };
+		74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */; };
+		74B0E16F20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16E20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift */; };
+		74B0E17120FCB09F00B6EBAF /* TestEpisodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 74B0E17020FCB09E00B6EBAF /* TestEpisodes.json */; };
 		74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFA9B20B8521900E3918D /* AppDelegate.swift */; };
-		74CFFA9E20B8521900E3918D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFA9D20B8521900E3918D /* ViewController.swift */; };
+		74CFFA9E20B8521900E3918D /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CFFA9D20B8521900E3918D /* CategoriesViewController.swift */; };
 		74CFFAA120B8521900E3918D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFA9F20B8521900E3918D /* Main.storyboard */; };
 		74CFFAA320B8521A00E3918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA220B8521A00E3918D /* Assets.xcassets */; };
 		74CFFAA620B8521A00E3918D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */; };
+		74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +57,14 @@
 		7449CAB620DD52E20090A3A9 /* TestCategory2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory2.json; sourceTree = "<group>"; };
 		7456899220BED192002C48DB /* TestCategory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory.json; sourceTree = "<group>"; };
 		7456899520BED57A002C48DB /* CategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequest.swift; sourceTree = "<group>"; };
+		74B0E16820FCAA5000B6EBAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesProvider.swift; sourceTree = "<group>"; };
+		74B0E16E20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEpisodeProviderTests.swift; sourceTree = "<group>"; };
+		74B0E17020FCB09E00B6EBAF /* TestEpisodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestEpisodes.json; sourceTree = "<group>"; };
 		74CFFA9820B8521900E3918D /* Mini iPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini iPlayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CFFA9B20B8521900E3918D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74CFFA9D20B8521900E3918D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74CFFA9D20B8521900E3918D /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		74CFFAA020B8521900E3918D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74CFFAA220B8521A00E3918D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CFFAA520B8521A00E3918D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +73,7 @@
 		74CFFAB220B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini iPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CFFABD20B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +126,9 @@
 			children = (
 				7419044620BEB4E200766E67 /* IBLCategories */,
 				74CFFA9B20B8521900E3918D /* AppDelegate.swift */,
-				74CFFA9D20B8521900E3918D /* ViewController.swift */,
+				74CFFA9D20B8521900E3918D /* CategoriesViewController.swift */,
+				74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */,
+				74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */,
 				74CFFA9F20B8521900E3918D /* Main.storyboard */,
 				74CFFAA220B8521A00E3918D /* Assets.xcassets */,
 				74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */,
@@ -122,7 +136,9 @@
 				7419044A20BEB65500766E67 /* FileCategoryProvider.swift */,
 				7456899520BED57A002C48DB /* CategoryRequest.swift */,
 				7419044C20BEB99000766E67 /* Category.swift */,
+				74B0E16820FCAA5000B6EBAF /* Episode.swift */,
 				7419044E20BEB9EF00766E67 /* CategoriesProvider.swift */,
+				74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */,
 			);
 			path = "Mini iPlayer";
 			sourceTree = "<group>";
@@ -132,8 +148,10 @@
 			children = (
 				7456899220BED192002C48DB /* TestCategory.json */,
 				7449CAB620DD52E20090A3A9 /* TestCategory2.json */,
+				74B0E17020FCB09E00B6EBAF /* TestEpisodes.json */,
 				74CFFAB220B8521A00E3918D /* Info.plist */,
 				7419045220BEBA7A00766E67 /* FileCategoryProviderTests.swift */,
+				74B0E16E20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift */,
 				7449CAB420DD45760090A3A9 /* TestIBLCategories copy */,
 			);
 			path = "Mini iPlayerTests";
@@ -266,6 +284,7 @@
 			files = (
 				7449CAB820DD530F0090A3A9 /* TestCategory2.json in Resources */,
 				7456899320BED1A0002C48DB /* TestCategory.json in Resources */,
+				74B0E17120FCB09F00B6EBAF /* TestEpisodes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CFFA9E20B8521900E3918D /* ViewController.swift in Sources */,
+				74CFFA9E20B8521900E3918D /* CategoriesViewController.swift in Sources */,
+				74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */,
+				74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */,
 				7419044B20BEB65500766E67 /* FileCategoryProvider.swift in Sources */,
+				74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */,
 				7419044F20BEB9EF00766E67 /* CategoriesProvider.swift in Sources */,
 				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
 				7419044D20BEB99000766E67 /* Category.swift in Sources */,
+				74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */,
 				7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B0E16F20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift in Sources */,
 				7419045320BEBA7A00766E67 /* FileCategoryProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

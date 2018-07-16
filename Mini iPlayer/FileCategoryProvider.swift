@@ -51,7 +51,7 @@ class FileCategoryProvider {
 }
 
 extension FileCategoryProvider: CategoriesProvider {
-    func getCategories(completion: @escaping ([Category])->()) {
+    func getCategories(completion: @escaping ([Category]) -> ()) {
         let categories = parseJSONFile(completion: completion)
     }
 }
