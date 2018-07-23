@@ -13,7 +13,7 @@ class EpisodesURLBuilder: URLProvider {
     private let url: URL
     
     init(categoryID: String) {
-        self.url = URL(string: "http://ibl.api.bbci.co.uk/ibl/v1/categories/\(categoryID)/highlights?lang=en&rights=mobile&availability=available")!
+        self.url = URL(string: "https://ibl.api.bbci.co.uk/ibl/v1/categories/\(categoryID)/highlights?lang=en&rights=mobile&availability=available")!
     }
     
     internal func create() -> URL {

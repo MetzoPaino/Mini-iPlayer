@@ -16,6 +16,8 @@ struct IBLRequest {
         urlSessionCategoryProvider.getCategories(completion: completion)
     }
     
-    public func getEpisodes(completion: @escaping ([Episode]) -> ()) {
+    public func getEpisodes(for categoryID: String, completion: @escaping ([Episode]) -> ()) {
+        let urlSessionEpisodeProvider = URLSessionEpisodeProvider(url: EpisodesURLBuilder(categoryID: categoryID).create(), parser: JSONEpisodeParser())
+        urlSessionEpisodeProvider.getEpisodes(completion: completion)
     }
 }

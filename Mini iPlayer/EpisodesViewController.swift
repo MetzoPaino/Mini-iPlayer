@@ -11,13 +11,20 @@ import UIKit
 class EpisodesViewController: UIViewController {
 
     var category: Category!
+    private let iblRequest = IBLRequest()
     private var episodes = [Episode]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = category.title
-        // Do any additional setup after loading the view.
+        iblRequest.getEpisodes(for: category.id) { (episodes) in
+            DispatchQueue.main.async {
+                self.episodes = episodes
+                print(self.episodes)
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
