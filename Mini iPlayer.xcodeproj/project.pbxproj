@@ -43,6 +43,8 @@
 		74CFFAA320B8521A00E3918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA220B8521A00E3918D /* Assets.xcassets */; };
 		74CFFAA620B8521A00E3918D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */; };
 		74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */; };
+		7982052521063160009ED95D /* CategoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982052421063160009ED95D /* CategoriesListInteractor.swift */; };
+		79820527210631FE009ED95D /* CategoryPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79820526210631FE009ED95D /* CategoryPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini iPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CFFABD20B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		7982052421063160009ED95D /* CategoriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListInteractor.swift; sourceTree = "<group>"; };
+		79820526210631FE009ED95D /* CategoryPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 		74CFFA9A20B8521900E3918D /* Mini iPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7982052321062F0E009ED95D /* CategoriesList */,
 				7419044620BEB4E200766E67 /* IBLCategories */,
 				74CFFA9B20B8521900E3918D /* AppDelegate.swift */,
 				74CFFA9D20B8521900E3918D /* CategoriesViewController.swift */,
@@ -222,6 +227,23 @@
 				74CFFABD20B8521A00E3918D /* Info.plist */,
 			);
 			path = "Mini iPlayerUITests";
+			sourceTree = "<group>";
+		};
+		7982052221062F01009ED95D /* AppLogic */ = {
+			isa = PBXGroup;
+			children = (
+				7982052421063160009ED95D /* CategoriesListInteractor.swift */,
+				79820526210631FE009ED95D /* CategoryPresentable.swift */,
+			);
+			path = AppLogic;
+			sourceTree = "<group>";
+		};
+		7982052321062F0E009ED95D /* CategoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				7982052221062F01009ED95D /* AppLogic */,
+			);
+			path = CategoriesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +398,8 @@
 				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
 				7419044D20BEB99000766E67 /* Category.swift in Sources */,
 				748A88A72106085800F739EF /* CategoryURLBuilder.swift in Sources */,
+				79820527210631FE009ED95D /* CategoryPresentable.swift in Sources */,
+				7982052521063160009ED95D /* CategoriesListInteractor.swift in Sources */,
 				748A88B62106137F00F739EF /* URLProvider.swift in Sources */,
 				748A88A9210608BD00F739EF /* IBLRequest.swift in Sources */,
 				74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */,
