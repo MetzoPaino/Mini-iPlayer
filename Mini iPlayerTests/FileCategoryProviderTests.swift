@@ -9,13 +9,29 @@
 import XCTest
 @testable import Mini_iPlayer
 
+class MockURLProvider: URLProvider {
+    
+    let fileName: String
+    
+    init(fileName: String = "TestCategory") {
+        self.fileName = fileName
+    }
+    
+    func create() -> URL {
+        let bundle = Bundle.main
+        let urlpath = bundle.path(forResource: fileName, ofType: "json")
+        return URL(fileURLWithPath: urlpath!)
+    }
+}
+
 class FileCategoryProviderTests: XCTestCase {
-        
+    
     func testArrayOfCategoriesReturnedFromFileProvider() {
-        let catFileProvider = FileCategoryProvider(fileName: "TestCategory")
+        let catFileProvider = FileCategoryProvider()
+        let mockURLProvider = MockURLProvider()
         
         let expect = expectation(description: "...")
-        catFileProvider.getCategories { (categories) in
+        catFileProvider.getCategories(from: mockURLProvider.create()) { (categories) in
             XCTAssertEqual(categories.first?.title, "Arts")
             expect.fulfill()
         }
@@ -25,10 +41,11 @@ class FileCategoryProviderTests: XCTestCase {
     }
     
     func testDifferentFilesCanBeParsed() {
-        let catFileProvider = FileCategoryProvider(fileName: "TestCategory2")
-        
+        let catFileProvider = FileCategoryProvider()
+        let mockURLProvider = MockURLProvider(fileName: "TestCategory2")
+
         let expect = expectation(description: "...")
-        catFileProvider.getCategories { (categories) in
+        catFileProvider.getCategories(from:  mockURLProvider.create()) { (categories) in
             XCTAssertEqual(categories.first?.title, "Drama")
             expect.fulfill()
         }

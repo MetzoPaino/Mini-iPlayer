@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CategoriesProvider {
-    func getCategories(completion: @escaping ([Category])->())
+    func getCategories(from url: URL, completion: @escaping ([Category])->())
 }

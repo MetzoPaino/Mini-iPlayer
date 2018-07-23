@@ -8,12 +8,27 @@
 
 import Foundation
 
-class URLBuilder {
-    
-    static func create(with fileName: String) -> URL {
-        let bundle = Bundle.main
-        let urlpath = bundle.path(forResource: fileName, ofType: "json")
-        return URL(fileURLWithPath: urlpath!)
-    }
+protocol URLProvider {
+    func create() -> URL
 }
 
+enum URLBuilderError: Error {
+    case notPresent
+}
+
+class URLBuilder: URLProvider {
+    
+    private let url: URL
+    
+    init(fileName: String) throws {
+        let bundle = Bundle.main
+        guard let urlpath = bundle.path(forResource: fileName, ofType: "json") else {
+            throw URLBuilderError.notPresent
+        }
+        url = URL(fileURLWithPath: urlpath)
+    }
+    
+    internal func create() -> URL {
+        return url
+    }
+}

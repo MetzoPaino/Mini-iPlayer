@@ -18,6 +18,7 @@
 		7456899320BED1A0002C48DB /* TestCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 7456899220BED192002C48DB /* TestCategory.json */; };
 		7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456899520BED57A002C48DB /* CategoryRequest.swift */; };
 		748A889F2105D95D00F739EF /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A889E2105D95D00F739EF /* URLBuilder.swift */; };
+		748A88A12105DD4C00F739EF /* URLBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A02105DD4C00F739EF /* URLBuilderTests.swift */; };
 		74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* Episode.swift */; };
 		74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */; };
 		74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */; };
@@ -59,6 +60,7 @@
 		7456899220BED192002C48DB /* TestCategory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory.json; sourceTree = "<group>"; };
 		7456899520BED57A002C48DB /* CategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequest.swift; sourceTree = "<group>"; };
 		748A889E2105D95D00F739EF /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		748A88A02105DD4C00F739EF /* URLBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderTests.swift; sourceTree = "<group>"; };
 		74B0E16820FCAA5000B6EBAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesProvider.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				74CFFAB220B8521A00E3918D /* Info.plist */,
 				7419045220BEBA7A00766E67 /* FileCategoryProviderTests.swift */,
 				74B0E16E20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift */,
+				748A88A02105DD4C00F739EF /* URLBuilderTests.swift */,
 				7449CAB420DD45760090A3A9 /* TestIBLCategories copy */,
 			);
 			path = "Mini iPlayerTests";
@@ -325,6 +328,7 @@
 			files = (
 				74B0E16F20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift in Sources */,
 				7419045320BEBA7A00766E67 /* FileCategoryProviderTests.swift in Sources */,
+				748A88A12105DD4C00F739EF /* URLBuilderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
