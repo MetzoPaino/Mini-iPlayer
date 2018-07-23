@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol EpisodesProvider {
+    func getEpisodes(categoryID: String, completion: @escaping ([Episode]) -> ())
+}

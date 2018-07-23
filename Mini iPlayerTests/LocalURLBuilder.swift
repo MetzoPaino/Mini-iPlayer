@@ -7,14 +7,7 @@
 //
 
 import Foundation
-
-protocol URLProvider {
-    func create() -> URL
-}
-
-enum URLBuilderError: Error {
-    case notPresent
-}
+@testable import Mini_iPlayer
 
 class LocalURLBuilder: URLProvider {
     

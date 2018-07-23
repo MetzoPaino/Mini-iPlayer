@@ -25,4 +25,3 @@ struct JSONCategoryParser: DataCategoryParser {
         }
     }
 }
-

@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Episode {
-    let title = "String"
+struct Episode: Codable {
+    let title: String
 }
