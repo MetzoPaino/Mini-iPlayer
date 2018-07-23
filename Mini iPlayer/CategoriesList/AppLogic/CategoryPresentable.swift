@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import IBLRequest
 
 struct CategoryPresentable {
     let title: String
     
-    init(category: Category) {
+    init(category: IBLCategory) {
         self.title = category.title
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Mini_iPlayer
+@testable import IBLRequest
 
 class URLSessionEpisodesProviderTests: XCTestCase {
     

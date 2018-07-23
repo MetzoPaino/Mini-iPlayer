@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import IBLRequest
 
 protocol CategoriesListInteractorInput {
     func retrieveCategories()

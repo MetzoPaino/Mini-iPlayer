@@ -8,9 +8,9 @@
 
 import Foundation
 
-typealias CategoryIdentifier = String
+public typealias CategoryIdentifier = String
 
 public struct IBLCategory: Codable {
-    let id: CategoryIdentifier
-    let title: String
+    public let id: CategoryIdentifier
+    public let title: String
 }

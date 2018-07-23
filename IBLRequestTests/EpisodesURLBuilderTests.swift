@@ -7,14 +7,14 @@
 //
 
 import XCTest
-@testable import Mini_iPlayer
+@testable import IBLRequest
 
 class EpisodesURLBuilderTests: XCTestCase {
     
     func testCorrectURLsReturned() {
-        let url = URL(string: "http://ibl.api.bbci.co.uk/ibl/v1/categories/documentaries/highlights?lang=en&rights=mobile&availability=available")!
+        let url = URL(string: "https://ibl.api.bbci.co.uk/ibl/v1/categories/documentaries/highlights?lang=en&rights=mobile&availability=available")!
         let episodeURLBuilder = EpisodesURLBuilder(categoryID: "documentaries")
         
-        XCTAssertEqual(episodeURLBuilder.create(), url, "Not the same!")
+        XCTAssertEqual(episodeURLBuilder.create(), url)
     }
 }

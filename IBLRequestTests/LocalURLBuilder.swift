@@ -7,14 +7,14 @@
 //
 
 import Foundation
-@testable import Mini_iPlayer
+@testable import IBLRequest
 
 class LocalURLBuilder: URLProvider {
     
     private let url: URL
     
     init(fileName: String) throws {
-        let bundle = Bundle.main
+        let bundle = Bundle.init(for: LocalURLBuilder.self)
         guard let urlpath = bundle.path(forResource: fileName, ofType: "json") else {
             throw URLBuilderError.notPresent
         }

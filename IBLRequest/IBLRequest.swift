@@ -9,12 +9,12 @@
 import Foundation
 
 public protocol CategoryDataManager {
-    func getCategories(completion: @escaping ([Category]) -> ())
+    func getCategories(completion: @escaping ([IBLCategory]) -> ())
 }
 
 struct IBLRequest: CategoryDataManager {
     
-    public func getCategories(completion: @escaping ([Category]) -> ()) {
+    public func getCategories(completion: @escaping ([IBLCategory]) -> ()) {
         let urlSessionCategoryProvider = URLSessionCategoryProvider(url: CategoryURLBuilder().create(), parser: JSONCategoryParser())
         urlSessionCategoryProvider.getCategories(completion: completion)
     }
