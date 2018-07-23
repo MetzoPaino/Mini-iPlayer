@@ -10,7 +10,7 @@ import Foundation
 
 typealias CategoryIdentifier = String
 
-public struct Category: Codable {
+public struct IBLCategory: Codable {
     let id: CategoryIdentifier
     let title: String
 }
