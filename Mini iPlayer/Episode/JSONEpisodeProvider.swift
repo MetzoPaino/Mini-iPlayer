@@ -18,7 +18,7 @@ struct JSONEpisodeParser: DataEpisodeParser {
         do {
             let decoder = JSONDecoder()
             let episodeRequest = try decoder.decode(EpisodeRequest.self, from: data)
-            return episodeRequest.categoryHighlights.elements
+            return episodeRequest.category_highlights.elements
         } catch {
             return [Episode]()
         }

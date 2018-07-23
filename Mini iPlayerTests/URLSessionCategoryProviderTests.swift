@@ -9,25 +9,10 @@
 import XCTest
 @testable import Mini_iPlayer
 
-class MockURLProvider: URLProvider {
-    
-    let fileName: String
-    
-    init(fileName: String = "TestCategory") {
-        self.fileName = fileName
-    }
-    
-    func create() -> URL {
-        let bundle = Bundle.main
-        let urlpath = bundle.path(forResource: fileName, ofType: "json")
-        return URL(fileURLWithPath: urlpath!)
-    }
-}
-
-class FileCategoryProviderTests: XCTestCase {
+class URLSessionCategoryProviderTests: XCTestCase {
     
     func testArrayOfCategoriesReturnedFromFileProvider() {
-        let mockURLProvider = MockURLProvider()
+        let mockURLProvider = try! LocalURLBuilder(fileName: "TestCategory")
         let dataCategoryParser = JSONCategoryParser()
         let catFileProvider = URLSessionCategoryProvider(url: mockURLProvider.create(), parser: dataCategoryParser)
         
@@ -42,7 +27,7 @@ class FileCategoryProviderTests: XCTestCase {
     }
     
     func testDifferentFilesCanBeParsed() {
-        let mockURLProvider = MockURLProvider(fileName: "TestCategory2")
+        let mockURLProvider = try! LocalURLBuilder(fileName: "TestCategory2")
         let dataCategoryParser = JSONCategoryParser()
         let catFileProvider = URLSessionCategoryProvider(url: mockURLProvider.create(), parser: dataCategoryParser)
 

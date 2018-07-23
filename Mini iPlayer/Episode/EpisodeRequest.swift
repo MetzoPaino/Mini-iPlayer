@@ -9,5 +9,5 @@
 import Foundation
 
 struct EpisodeRequest: Codable {
-    let categoryHighlights: CategoryHighlights
+    let category_highlights: CategoryHighlights
 }
