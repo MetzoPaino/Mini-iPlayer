@@ -12,7 +12,6 @@ import XCTest
 class URLBuilderTests: XCTestCase {
     
     func testCreate() {
-        
         do {
             let urlBuilder = try URLBuilder(fileName: "TestCategory")
             let url = urlBuilder.create()

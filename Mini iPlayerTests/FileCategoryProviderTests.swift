@@ -27,11 +27,12 @@ class MockURLProvider: URLProvider {
 class FileCategoryProviderTests: XCTestCase {
     
     func testArrayOfCategoriesReturnedFromFileProvider() {
-        let catFileProvider = FileCategoryProvider()
         let mockURLProvider = MockURLProvider()
+        let dataCategoryParser = JSONCategoryParser()
+        let catFileProvider = URLSessionCategoryProvider(url: mockURLProvider.create(), parser: dataCategoryParser)
         
         let expect = expectation(description: "...")
-        catFileProvider.getCategories(from: mockURLProvider.create()) { (categories) in
+        catFileProvider.getCategories { (categories) in
             XCTAssertEqual(categories.first?.title, "Arts")
             expect.fulfill()
         }
@@ -41,11 +42,12 @@ class FileCategoryProviderTests: XCTestCase {
     }
     
     func testDifferentFilesCanBeParsed() {
-        let catFileProvider = FileCategoryProvider()
         let mockURLProvider = MockURLProvider(fileName: "TestCategory2")
+        let dataCategoryParser = JSONCategoryParser()
+        let catFileProvider = URLSessionCategoryProvider(url: mockURLProvider.create(), parser: dataCategoryParser)
 
         let expect = expectation(description: "...")
-        catFileProvider.getCategories(from:  mockURLProvider.create()) { (categories) in
+        catFileProvider.getCategories { (categories) in
             XCTAssertEqual(categories.first?.title, "Drama")
             expect.fulfill()
         }
