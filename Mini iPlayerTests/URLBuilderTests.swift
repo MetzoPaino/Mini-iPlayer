@@ -13,7 +13,7 @@ class URLBuilderTests: XCTestCase {
     
     func testCreate() {
         do {
-            let urlBuilder = try URLBuilder(fileName: "TestCategory")
+            let urlBuilder = try LocalURLBuilder(fileName: "TestCategory")
             let url = urlBuilder.create()
             XCTAssertNotNil(url.absoluteString, "URLBuilder failed to correctly build URL.")
         } catch {

@@ -17,10 +17,12 @@
 		7449CAB820DD530F0090A3A9 /* TestCategory2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7449CAB620DD52E20090A3A9 /* TestCategory2.json */; };
 		7456899320BED1A0002C48DB /* TestCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 7456899220BED192002C48DB /* TestCategory.json */; };
 		7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456899520BED57A002C48DB /* CategoryRequest.swift */; };
-		748A889F2105D95D00F739EF /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A889E2105D95D00F739EF /* URLBuilder.swift */; };
+		748A889F2105D95D00F739EF /* LocalURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A889E2105D95D00F739EF /* LocalURLBuilder.swift */; };
 		748A88A12105DD4C00F739EF /* URLBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A02105DD4C00F739EF /* URLBuilderTests.swift */; };
 		748A88A32105E76700F739EF /* JSONCategoryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A22105E76700F739EF /* JSONCategoryParser.swift */; };
 		748A88A52105E83100F739EF /* JSONCategoryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A42105E83100F739EF /* JSONCategoryParserTests.swift */; };
+		748A88A72106085800F739EF /* CategoryURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A62106085800F739EF /* CategoryURLBuilder.swift */; };
+		748A88A9210608BD00F739EF /* IBLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A8210608BD00F739EF /* IBLRequest.swift */; };
 		74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* Episode.swift */; };
 		74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */; };
 		74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */; };
@@ -61,10 +63,12 @@
 		7449CAB620DD52E20090A3A9 /* TestCategory2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory2.json; sourceTree = "<group>"; };
 		7456899220BED192002C48DB /* TestCategory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory.json; sourceTree = "<group>"; };
 		7456899520BED57A002C48DB /* CategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequest.swift; sourceTree = "<group>"; };
-		748A889E2105D95D00F739EF /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		748A889E2105D95D00F739EF /* LocalURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalURLBuilder.swift; sourceTree = "<group>"; };
 		748A88A02105DD4C00F739EF /* URLBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilderTests.swift; sourceTree = "<group>"; };
 		748A88A22105E76700F739EF /* JSONCategoryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCategoryParser.swift; sourceTree = "<group>"; };
 		748A88A42105E83100F739EF /* JSONCategoryParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCategoryParserTests.swift; sourceTree = "<group>"; };
+		748A88A62106085800F739EF /* CategoryURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryURLBuilder.swift; sourceTree = "<group>"; };
+		748A88A8210608BD00F739EF /* IBLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLRequest.swift; sourceTree = "<group>"; };
 		74B0E16820FCAA5000B6EBAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesProvider.swift; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		748A88AA210608C200F739EF /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				74B0E16820FCAA5000B6EBAF /* Episode.swift */,
+				74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
 		74CFFA8F20B8521900E3918D = {
 			isa = PBXGroup;
 			children = (
@@ -145,10 +158,11 @@
 				748A88A22105E76700F739EF /* JSONCategoryParser.swift */,
 				7456899520BED57A002C48DB /* CategoryRequest.swift */,
 				7419044C20BEB99000766E67 /* Category.swift */,
-				74B0E16820FCAA5000B6EBAF /* Episode.swift */,
 				7419044E20BEB9EF00766E67 /* CategoriesProvider.swift */,
-				74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */,
-				748A889E2105D95D00F739EF /* URLBuilder.swift */,
+				748A889E2105D95D00F739EF /* LocalURLBuilder.swift */,
+				748A88A62106085800F739EF /* CategoryURLBuilder.swift */,
+				748A88A8210608BD00F739EF /* IBLRequest.swift */,
+				748A88AA210608C200F739EF /* Episode */,
 			);
 			path = "Mini iPlayer";
 			sourceTree = "<group>";
@@ -317,13 +331,15 @@
 				74CFFA9E20B8521900E3918D /* CategoriesViewController.swift in Sources */,
 				74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */,
 				74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */,
-				748A889F2105D95D00F739EF /* URLBuilder.swift in Sources */,
+				748A889F2105D95D00F739EF /* LocalURLBuilder.swift in Sources */,
 				748A88A32105E76700F739EF /* JSONCategoryParser.swift in Sources */,
 				7419044B20BEB65500766E67 /* URLSessionCategoryProvider.swift in Sources */,
 				74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */,
 				7419044F20BEB9EF00766E67 /* CategoriesProvider.swift in Sources */,
 				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
 				7419044D20BEB99000766E67 /* Category.swift in Sources */,
+				748A88A72106085800F739EF /* CategoryURLBuilder.swift in Sources */,
+				748A88A9210608BD00F739EF /* IBLRequest.swift in Sources */,
 				74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */,
 				7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */,
 			);

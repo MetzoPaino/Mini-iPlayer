@@ -16,7 +16,7 @@ enum URLBuilderError: Error {
     case notPresent
 }
 
-class URLBuilder: URLProvider {
+class LocalURLBuilder: URLProvider {
     
     private let url: URL
     
@@ -32,3 +32,4 @@ class URLBuilder: URLProvider {
         return url
     }
 }
+

@@ -12,18 +12,18 @@ class CategoriesViewController: UIViewController {
 
     @IBOutlet private var collectionView: UICollectionView!
     
-    private let categoriesFileProvider = FileCategoryProvider(fileName: "TestCategory")
+    private let iblRequest = IBLRequest()
     private var categories = [Category]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        categoriesFileProvider.getCategories { (categories) in
-            
+        iblRequest.getCategories { (categories) in
             DispatchQueue.main.async {
                 self.categories = categories
                 self.collectionView.reloadData()
             }
+
         }
     }
     
