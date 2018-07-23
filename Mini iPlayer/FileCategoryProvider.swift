@@ -11,20 +11,15 @@ import Foundation
 class FileCategoryProvider {
 
     private let fileName: String
-    private var url: URL {
-        let bundle = Bundle(for: type(of: self))
-        let urlpath = bundle.path(forResource: fileName, ofType: "json")
-        return URL(fileURLWithPath: urlpath!)
-    }
     
     init(fileName: String) {
         
         self.fileName = fileName
     }
     
-    func parseJSONFile(completion: @escaping ([Category])->()) {
+    func parseJSONFile(completion: @escaping ([Category]) -> ()) {
         
-        URLSession.shared.dataTask(with: self.url) { (data, response, error) in
+        URLSession.shared.dataTask(with: URLBuilder.create(with: fileName)) { (data, response, error) in
             
             guard let data = data else { return }
             do {
@@ -38,20 +33,12 @@ class FileCategoryProvider {
                 print("Err", err)
                 completion([Category]())
             }
-            
-            
-//            if let data = data {
-//                let json = try? JSONSerialization.jsonObject(with: data, options: [])
-//                print(json)
-//            } else {
-//                print("No Data")
-//            }
         }.resume()
     }
 }
 
 extension FileCategoryProvider: CategoriesProvider {
     func getCategories(completion: @escaping ([Category]) -> ()) {
-        let categories = parseJSONFile(completion: completion)
+        parseJSONFile(completion: completion)
     }
 }

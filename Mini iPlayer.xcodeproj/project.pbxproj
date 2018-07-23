@@ -17,6 +17,7 @@
 		7449CAB820DD530F0090A3A9 /* TestCategory2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7449CAB620DD52E20090A3A9 /* TestCategory2.json */; };
 		7456899320BED1A0002C48DB /* TestCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 7456899220BED192002C48DB /* TestCategory.json */; };
 		7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7456899520BED57A002C48DB /* CategoryRequest.swift */; };
+		748A889F2105D95D00F739EF /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A889E2105D95D00F739EF /* URLBuilder.swift */; };
 		74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* Episode.swift */; };
 		74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */; };
 		74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */; };
@@ -57,6 +58,7 @@
 		7449CAB620DD52E20090A3A9 /* TestCategory2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory2.json; sourceTree = "<group>"; };
 		7456899220BED192002C48DB /* TestCategory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestCategory.json; sourceTree = "<group>"; };
 		7456899520BED57A002C48DB /* CategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequest.swift; sourceTree = "<group>"; };
+		748A889E2105D95D00F739EF /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		74B0E16820FCAA5000B6EBAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesProvider.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				74B0E16820FCAA5000B6EBAF /* Episode.swift */,
 				7419044E20BEB9EF00766E67 /* CategoriesProvider.swift */,
 				74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */,
+				748A889E2105D95D00F739EF /* URLBuilder.swift */,
 			);
 			path = "Mini iPlayer";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				74CFFA9E20B8521900E3918D /* CategoriesViewController.swift in Sources */,
 				74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */,
 				74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */,
+				748A889F2105D95D00F739EF /* URLBuilder.swift in Sources */,
 				7419044B20BEB65500766E67 /* FileCategoryProvider.swift in Sources */,
 				74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */,
 				7419044F20BEB9EF00766E67 /* CategoriesProvider.swift in Sources */,
