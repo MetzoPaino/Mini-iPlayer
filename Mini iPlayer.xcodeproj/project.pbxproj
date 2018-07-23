@@ -30,6 +30,8 @@
 		748A88B62106137F00F739EF /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88B52106137F00F739EF /* URLProvider.swift */; };
 		748A88B82106142700F739EF /* URLSessionEpisodesProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88B72106142700F739EF /* URLSessionEpisodesProviderTests.swift */; };
 		748A88B9210614FE00F739EF /* TestEpisodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 74B0E17020FCB09E00B6EBAF /* TestEpisodes.json */; };
+		748A88BB2106177100F739EF /* EpisodesURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88BA2106177100F739EF /* EpisodesURLBuilder.swift */; };
+		748A88BD2106178900F739EF /* EpisodesURLBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88BC2106178900F739EF /* EpisodesURLBuilderTests.swift */; };
 		74B0E16920FCAA5000B6EBAF /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* Episode.swift */; };
 		74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */; };
 		74B0E16D20FCAF0000B6EBAF /* EpisodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */; };
@@ -82,6 +84,8 @@
 		748A88B2210611BE00F739EF /* CategoryHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHighlights.swift; sourceTree = "<group>"; };
 		748A88B52106137F00F739EF /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 		748A88B72106142700F739EF /* URLSessionEpisodesProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionEpisodesProviderTests.swift; sourceTree = "<group>"; };
+		748A88BA2106177100F739EF /* EpisodesURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesURLBuilder.swift; sourceTree = "<group>"; };
+		748A88BC2106178900F739EF /* EpisodesURLBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesURLBuilderTests.swift; sourceTree = "<group>"; };
 		74B0E16820FCAA5000B6EBAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesProvider.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				748A88AC21060F6A00F739EF /* URLSessionEpisodeProvider.swift */,
 				748A88AE21060FBE00F739EF /* JSONEpisodeProvider.swift */,
 				748A88B02106119B00F739EF /* EpisodeRequest.swift */,
+				748A88BA2106177100F739EF /* EpisodesURLBuilder.swift */,
 			);
 			path = Episode;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 				74B0E16E20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift */,
 				748A88A02105DD4C00F739EF /* URLBuilderTests.swift */,
 				748A88A42105E83100F739EF /* JSONCategoryParserTests.swift */,
+				748A88BC2106178900F739EF /* EpisodesURLBuilderTests.swift */,
 				7449CAB420DD45760090A3A9 /* TestIBLCategories copy */,
 			);
 			path = "Mini iPlayerTests";
@@ -374,6 +380,7 @@
 				748A88A9210608BD00F739EF /* IBLRequest.swift in Sources */,
 				74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */,
 				7456899620BED57A002C48DB /* CategoryRequest.swift in Sources */,
+				748A88BB2106177100F739EF /* EpisodesURLBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +390,7 @@
 			files = (
 				748A88A52105E83100F739EF /* JSONCategoryParserTests.swift in Sources */,
 				748A88B42106136200F739EF /* LocalURLBuilder.swift in Sources */,
+				748A88BD2106178900F739EF /* EpisodesURLBuilderTests.swift in Sources */,
 				74B0E16F20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift in Sources */,
 				7419045320BEBA7A00766E67 /* URLSessionCategoryProviderTests.swift in Sources */,
 				748A88A12105DD4C00F739EF /* URLBuilderTests.swift in Sources */,
