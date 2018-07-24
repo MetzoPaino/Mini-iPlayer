@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import IBLRequest
 
 class EpisodesViewController: UIViewController {
 
-    var category: Category!
+    var category: IBLCategory!
     private let iblRequest = IBLRequest()
     private var episodes = [Episode]()
 

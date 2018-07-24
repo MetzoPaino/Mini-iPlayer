@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IBLRequest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Mini iPlayer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>74ABAAF221072A1D00FFBF9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>74CFFA9720B8521900E3918D</key>
 		<dict>
 			<key>primary</key>

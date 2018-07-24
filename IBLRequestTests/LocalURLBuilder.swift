@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import Mini_iPlayer
+@testable import IBLRequest
 
 class LocalURLBuilder: URLProvider {
     

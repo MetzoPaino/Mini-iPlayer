@@ -20,7 +20,7 @@ class URLSessionCategoryProvider {
 }
 
 extension URLSessionCategoryProvider: CategoriesProvider {
-    func getCategories(completion: @escaping ([Category]) -> ()) {
+    func getCategories(completion: @escaping ([IBLCategory]) -> ()) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             completion(self.parser.parse(data: data))

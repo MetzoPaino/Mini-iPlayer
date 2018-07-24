@@ -8,9 +8,11 @@
 
 import Foundation
 
-struct IBLRequest {
+public struct IBLRequest {
     
-    public func getCategories(completion: @escaping ([Category]) -> ()) {
+    public init(){}
+    
+    public func getCategories(completion: @escaping ([IBLCategory]) -> ()) {
         
         let urlSessionCategoryProvider = URLSessionCategoryProvider(url: CategoryURLBuilder().create(), parser: JSONCategoryParser())
         urlSessionCategoryProvider.getCategories(completion: completion)
