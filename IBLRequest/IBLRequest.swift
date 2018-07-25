@@ -8,19 +8,10 @@
 
 import Foundation
 
-public protocol CategoryDataManager {
-    func getCategories(completion: @escaping ([IBLCategory]) -> ())
-}
-
-struct IBLRequest: CategoryDataManager {
+public struct IBLRequest {
     
-    public func getCategories(completion: @escaping ([IBLCategory]) -> ()) {
+    static public func getCategories(completion: @escaping ([IBLCategory]) -> ()) {
         let urlSessionCategoryProvider = URLSessionCategoryProvider(url: CategoryURLBuilder().create(), parser: JSONCategoryParser())
         urlSessionCategoryProvider.getCategories(completion: completion)
-    }
-    
-    public func getEpisodes(for categoryID: String, completion: @escaping ([Episode]) -> ()) {
-        let urlSessionEpisodeProvider = URLSessionEpisodeProvider(url: EpisodesURLBuilder(categoryID: categoryID).create(), parser: JSONEpisodeParser())
-        urlSessionEpisodeProvider.getEpisodes(completion: completion)
     }
 }

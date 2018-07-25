@@ -15,4 +15,8 @@ struct CategoryPresentable {
     init(category: IBLCategory) {
         self.title = category.title
     }
+    
+    func displayItem() -> CategoriesDisplayItem {
+        return CategoriesDisplayItem(title: title)
+    }
 }
