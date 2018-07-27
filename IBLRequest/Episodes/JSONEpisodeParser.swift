@@ -9,18 +9,18 @@
 import Foundation
 
 protocol DataEpisodeParser {
-    func parse(data: Data) -> [Episode]
+    func parse(data: Data) -> [IBLEpisode]
 }
 
 struct JSONEpisodeParser: DataEpisodeParser {
     
-    func parse(data: Data) -> [Episode] {
+    func parse(data: Data) -> [IBLEpisode] {
         do {
             let decoder = JSONDecoder()
             let episodeRequest = try decoder.decode(EpisodeRequest.self, from: data)
             return episodeRequest.category_highlights.elements
         } catch {
-            return [Episode]()
+            return [IBLEpisode]()
         }
     }
 }

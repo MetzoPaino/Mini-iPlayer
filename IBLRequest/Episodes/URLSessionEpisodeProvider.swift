@@ -20,7 +20,7 @@ class URLSessionEpisodeProvider {
 }
 
 extension URLSessionEpisodeProvider: EpisodesProvider {
-    func getEpisodes(completion: @escaping ([Episode]) -> ()) {
+    func getEpisodes(completion: @escaping ([IBLEpisode]) -> ()) {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             completion(self.parser.parse(data: data))

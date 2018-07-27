@@ -9,5 +9,5 @@
 import Foundation
 
 protocol EpisodesProvider {
-    func getEpisodes(completion: @escaping ([Episode]) -> ())
+    func getEpisodes(completion: @escaping ([IBLEpisode]) -> ())
 }
