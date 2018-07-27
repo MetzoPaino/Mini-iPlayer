@@ -9,11 +9,11 @@
 import Foundation
 import IBLRequest
 
-struct CategoryPresentable {
+public struct CategoryPresentable {
     let title: String
     let id: String
     
-    init(category: IBLCategory) {
+    public init(category: IBLCategory) {
         self.title = category.title
         self.id = category.id
     }

@@ -8,30 +8,19 @@
 
 import Foundation
 import UIKit
+import CategoriesList
 
 class AppDependencies {
     
-    var listWireframe = CategoriesListWireframe()
+    let listWireframe: CategoriesListWireframe
 
     init() {
-        configureDependencies()
+        let rootWireframe = RootWireframe()
+        let categoriesListDataManager = IBLRequestCategoryDataManager()
+        listWireframe = CategoriesListWireframe(dataManager: categoriesListDataManager, rootWireframe: rootWireframe, categorySelectedHandler: rootWireframe)
     }
     
     func installRootViewControllerIntoWindow(_ window: UIWindow) {
         listWireframe.presentCategoriesListInterfaceFromWindow(window)
-    }
-    
-    func configureDependencies() {
-        let rootWireframe = RootWireframe()
-        
-        let categoriesListPresenter = CategoriesListPresenter()
-        let categoriesListDataManager = IBLRequestCategoryDataManager()
-        let categoriesListInteractor = CategoriesListInteractor(dataManager: categoriesListDataManager, output: categoriesListPresenter)
-        
-        categoriesListPresenter.listInteractor = categoriesListInteractor
-        categoriesListPresenter.listWireframe = listWireframe
-        
-        listWireframe.categoriesListPresenter = categoriesListPresenter
-        listWireframe.rootWireframe = rootWireframe
     }
 }

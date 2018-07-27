@@ -11,9 +11,23 @@
 		74CFFAA120B8521900E3918D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFA9F20B8521900E3918D /* Main.storyboard */; };
 		74CFFAA320B8521A00E3918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA220B8521A00E3918D /* Assets.xcassets */; };
 		74CFFAA620B8521A00E3918D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */; };
-		7937B250210B0AF600E87F63 /* CategoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B24F210B0AF600E87F63 /* CategoriesItem.swift */; };
-		7982052521063160009ED95D /* CategoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982052421063160009ED95D /* CategoriesListInteractor.swift */; };
-		79820527210631FE009ED95D /* CategoryPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79820526210631FE009ED95D /* CategoryPresentable.swift */; };
+		7937B260210B10B000E87F63 /* CategoriesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7937B257210B10B000E87F63 /* CategoriesList.framework */; };
+		7937B267210B10B000E87F63 /* CategoriesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B266210B10B000E87F63 /* CategoriesListTests.swift */; };
+		7937B269210B10B000E87F63 /* CategoriesList.h in Headers */ = {isa = PBXBuildFile; fileRef = 7937B259210B10B000E87F63 /* CategoriesList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7937B26C210B10B000E87F63 /* CategoriesList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7937B257210B10B000E87F63 /* CategoriesList.framework */; };
+		7937B26D210B10B000E87F63 /* CategoriesList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7937B257210B10B000E87F63 /* CategoriesList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7937B274210B10CF00E87F63 /* CategoriesListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E298892108908600EACC80 /* CategoriesListWireframe.swift */; };
+		7937B275210B10D400E87F63 /* CategoriesListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988221088BC900EACC80 /* CategoriesListViewInterface.swift */; };
+		7937B276210B10D400E87F63 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988621088D0500EACC80 /* CategoriesViewController.swift */; };
+		7937B277210B10DB00E87F63 /* CategoriesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B24F210B0AF600E87F63 /* CategoriesItem.swift */; };
+		7937B278210B10DB00E87F63 /* CategoriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E298792107801300EACC80 /* CategoriesListPresenter.swift */; };
+		7937B279210B10DB00E87F63 /* CategoriesPresentableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2987B2107827D00EACC80 /* CategoriesPresentableCollection.swift */; };
+		7937B27A210B10DB00E87F63 /* CategoriesDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988421088C2800EACC80 /* CategoriesDisplayData.swift */; };
+		7937B27B210B10E200E87F63 /* CategoriesListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2987521077F9900EACC80 /* CategoriesListModuleInterface.swift */; };
+		7937B27C210B10E800E87F63 /* CategoriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7982052421063160009ED95D /* CategoriesListInteractor.swift */; };
+		7937B27D210B10E800E87F63 /* CategoryPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79820526210631FE009ED95D /* CategoryPresentable.swift */; };
+		7937B27F210B155A00E87F63 /* IBLRequestCategoryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E298912108A52800EACC80 /* IBLRequestCategoryDataManager.swift */; };
+		7937B282210B1D0200E87F63 /* Categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7937B281210B1D0200E87F63 /* Categories.storyboard */; };
 		798205392106358E009ED95D /* IBLRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798205302106358E009ED95D /* IBLRequest.framework */; };
 		798205422106358E009ED95D /* IBLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 798205322106358E009ED95D /* IBLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798205452106358E009ED95D /* IBLRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798205302106358E009ED95D /* IBLRequest.framework */; };
@@ -42,16 +56,8 @@
 		79820565210635F1009ED95D /* JSONCategoryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A42105E83100F739EF /* JSONCategoryParserTests.swift */; };
 		79820566210635F1009ED95D /* EpisodesURLBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88BC2106178900F739EF /* EpisodesURLBuilderTests.swift */; };
 		798205722106363D009ED95D /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88B52106137F00F739EF /* URLProvider.swift */; };
-		79E2987621077F9900EACC80 /* CategoriesListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2987521077F9900EACC80 /* CategoriesListModuleInterface.swift */; };
-		79E2987A2107801300EACC80 /* CategoriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E298792107801300EACC80 /* CategoriesListPresenter.swift */; };
-		79E2987C2107827D00EACC80 /* CategoriesPresentableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2987B2107827D00EACC80 /* CategoriesPresentableCollection.swift */; };
-		79E2988321088BC900EACC80 /* CategoriesListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988221088BC900EACC80 /* CategoriesListViewInterface.swift */; };
-		79E2988521088C2800EACC80 /* CategoriesDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988421088C2800EACC80 /* CategoriesDisplayData.swift */; };
-		79E2988721088D0500EACC80 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988621088D0500EACC80 /* CategoriesViewController.swift */; };
-		79E2988A2108908600EACC80 /* CategoriesListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E298892108908600EACC80 /* CategoriesListWireframe.swift */; };
 		79E2988E2108924D00EACC80 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988D2108924D00EACC80 /* RootWireframe.swift */; };
 		79E298902108A2CD00EACC80 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2988F2108A2CD00EACC80 /* AppDependencies.swift */; };
-		79E298922108A52800EACC80 /* IBLRequestCategoryDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E298912108A52800EACC80 /* IBLRequestCategoryDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 74CFFA9720B8521900E3918D;
 			remoteInfo = "Mini iPlayer";
+		};
+		7937B261210B10B000E87F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CFFA9020B8521900E3918D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7937B256210B10B000E87F63;
+			remoteInfo = CategoriesList;
+		};
+		7937B263210B10B000E87F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CFFA9020B8521900E3918D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74CFFA9720B8521900E3918D;
+			remoteInfo = "Mini iPlayer";
+		};
+		7937B26A210B10B000E87F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CFFA9020B8521900E3918D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7937B256210B10B000E87F63;
+			remoteInfo = CategoriesList;
 		};
 		7982053A2106358E009ED95D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -99,6 +126,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7937B26D210B10B000E87F63 /* CategoriesList.framework in Embed Frameworks */,
 				798205462106358E009ED95D /* IBLRequest.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -142,6 +170,13 @@
 		74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini iPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CFFABD20B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7937B24F210B0AF600E87F63 /* CategoriesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesItem.swift; sourceTree = "<group>"; };
+		7937B257210B10B000E87F63 /* CategoriesList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CategoriesList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7937B259210B10B000E87F63 /* CategoriesList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoriesList.h; sourceTree = "<group>"; };
+		7937B25A210B10B000E87F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7937B25F210B10B000E87F63 /* CategoriesListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoriesListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7937B266210B10B000E87F63 /* CategoriesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListTests.swift; sourceTree = "<group>"; };
+		7937B268210B10B000E87F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7937B281210B1D0200E87F63 /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Categories.storyboard; sourceTree = "<group>"; };
 		7982052421063160009ED95D /* CategoriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListInteractor.swift; sourceTree = "<group>"; };
 		79820526210631FE009ED95D /* CategoryPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresentable.swift; sourceTree = "<group>"; };
 		798205302106358E009ED95D /* IBLRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBLRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7937B26C210B10B000E87F63 /* CategoriesList.framework in Frameworks */,
 				798205452106358E009ED95D /* IBLRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +217,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7937B253210B10B000E87F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7937B25C210B10B000E87F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7937B260210B10B000E87F63 /* CategoriesList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +288,8 @@
 				74CFFABA20B8521A00E3918D /* Mini iPlayerUITests */,
 				798205312106358E009ED95D /* IBLRequest */,
 				7982053E2106358E009ED95D /* IBLRequestTests */,
+				7937B258210B10B000E87F63 /* CategoriesList */,
+				7937B265210B10B000E87F63 /* CategoriesListTests */,
 				74CFFA9920B8521900E3918D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -249,6 +302,8 @@
 				74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */,
 				798205302106358E009ED95D /* IBLRequest.framework */,
 				798205382106358E009ED95D /* IBLRequestTests.xctest */,
+				7937B257210B10B000E87F63 /* CategoriesList.framework */,
+				7937B25F210B10B000E87F63 /* CategoriesListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,9 +312,10 @@
 			isa = PBXGroup;
 			children = (
 				79E2988B2108915500EACC80 /* Classes */,
-				7982052321062F0E009ED95D /* CategoriesList */,
+				7937B251210B0FE200E87F63 /* EpisodesList */,
 				74CFFA9B20B8521900E3918D /* AppDelegate.swift */,
 				79E2988F2108A2CD00EACC80 /* AppDependencies.swift */,
+				79E298912108A52800EACC80 /* IBLRequestCategoryDataManager.swift */,
 				74CFFA9F20B8521900E3918D /* Main.storyboard */,
 				74CFFAA220B8521A00E3918D /* Assets.xcassets */,
 				74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */,
@@ -284,24 +340,50 @@
 			path = "Mini iPlayerUITests";
 			sourceTree = "<group>";
 		};
+		7937B251210B0FE200E87F63 /* EpisodesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EpisodesList;
+			sourceTree = "<group>";
+		};
+		7937B258210B10B000E87F63 /* CategoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				7937B280210B1CF200E87F63 /* Resources */,
+				79E2987721077FF200EACC80 /* UserInterface */,
+				79E2987421077E9F00EACC80 /* ModuleInterface */,
+				7982052221062F01009ED95D /* AppLogic */,
+				7937B259210B10B000E87F63 /* CategoriesList.h */,
+				7937B25A210B10B000E87F63 /* Info.plist */,
+			);
+			path = CategoriesList;
+			sourceTree = "<group>";
+		};
+		7937B265210B10B000E87F63 /* CategoriesListTests */ = {
+			isa = PBXGroup;
+			children = (
+				7937B266210B10B000E87F63 /* CategoriesListTests.swift */,
+				7937B268210B10B000E87F63 /* Info.plist */,
+			);
+			path = CategoriesListTests;
+			sourceTree = "<group>";
+		};
+		7937B280210B1CF200E87F63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7937B281210B1D0200E87F63 /* Categories.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7982052221062F01009ED95D /* AppLogic */ = {
 			isa = PBXGroup;
 			children = (
 				7982052421063160009ED95D /* CategoriesListInteractor.swift */,
 				79820526210631FE009ED95D /* CategoryPresentable.swift */,
-				79E298912108A52800EACC80 /* IBLRequestCategoryDataManager.swift */,
 			);
 			path = AppLogic;
-			sourceTree = "<group>";
-		};
-		7982052321062F0E009ED95D /* CategoriesList */ = {
-			isa = PBXGroup;
-			children = (
-				79E2987721077FF200EACC80 /* UserInterface */,
-				79E2987421077E9F00EACC80 /* ModuleInterface */,
-				7982052221062F01009ED95D /* AppLogic */,
-			);
-			path = CategoriesList;
 			sourceTree = "<group>";
 		};
 		798205312106358E009ED95D /* IBLRequest */ = {
@@ -399,6 +481,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7937B254210B10B000E87F63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7937B269210B10B000E87F63 /* CategoriesList.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7982052D2106358E009ED95D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +513,7 @@
 			);
 			dependencies = (
 				798205442106358E009ED95D /* PBXTargetDependency */,
+				7937B26B210B10B000E87F63 /* PBXTargetDependency */,
 			);
 			name = "Mini iPlayer";
 			productName = "Mini iPlayer";
@@ -464,6 +555,43 @@
 			productName = "Mini iPlayerUITests";
 			productReference = 74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7937B256210B10B000E87F63 /* CategoriesList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7937B26E210B10B000E87F63 /* Build configuration list for PBXNativeTarget "CategoriesList" */;
+			buildPhases = (
+				7937B252210B10B000E87F63 /* Sources */,
+				7937B253210B10B000E87F63 /* Frameworks */,
+				7937B254210B10B000E87F63 /* Headers */,
+				7937B255210B10B000E87F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CategoriesList;
+			productName = CategoriesList;
+			productReference = 7937B257210B10B000E87F63 /* CategoriesList.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7937B25E210B10B000E87F63 /* CategoriesListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7937B271210B10B000E87F63 /* Build configuration list for PBXNativeTarget "CategoriesListTests" */;
+			buildPhases = (
+				7937B25B210B10B000E87F63 /* Sources */,
+				7937B25C210B10B000E87F63 /* Frameworks */,
+				7937B25D210B10B000E87F63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7937B262210B10B000E87F63 /* PBXTargetDependency */,
+				7937B264210B10B000E87F63 /* PBXTargetDependency */,
+			);
+			name = CategoriesListTests;
+			productName = CategoriesListTests;
+			productReference = 7937B25F210B10B000E87F63 /* CategoriesListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7982052F2106358E009ED95D /* IBLRequest */ = {
 			isa = PBXNativeTarget;
@@ -523,6 +651,13 @@
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 74CFFA9720B8521900E3918D;
 					};
+					7937B256210B10B000E87F63 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					7937B25E210B10B000E87F63 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 74CFFA9720B8521900E3918D;
+					};
 					7982052F2106358E009ED95D = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -550,6 +685,8 @@
 				74CFFAB620B8521A00E3918D /* Mini iPlayerUITests */,
 				7982052F2106358E009ED95D /* IBLRequest */,
 				798205372106358E009ED95D /* IBLRequestTests */,
+				7937B256210B10B000E87F63 /* CategoriesList */,
+				7937B25E210B10B000E87F63 /* CategoriesListTests */,
 			);
 		};
 /* End PBXProject section */
@@ -573,6 +710,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		74CFFAB520B8521A00E3918D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7937B255210B10B000E87F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7937B282210B1D0200E87F63 /* Categories.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7937B25D210B10B000E87F63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -603,20 +755,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E2988521088C2800EACC80 /* CategoriesDisplayData.swift in Sources */,
-				7937B250210B0AF600E87F63 /* CategoriesItem.swift in Sources */,
-				79E2988721088D0500EACC80 /* CategoriesViewController.swift in Sources */,
-				79E2988321088BC900EACC80 /* CategoriesListViewInterface.swift in Sources */,
-				79E2987A2107801300EACC80 /* CategoriesListPresenter.swift in Sources */,
-				79E2988A2108908600EACC80 /* CategoriesListWireframe.swift in Sources */,
 				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
-				79E2987621077F9900EACC80 /* CategoriesListModuleInterface.swift in Sources */,
-				79E2987C2107827D00EACC80 /* CategoriesPresentableCollection.swift in Sources */,
-				79820527210631FE009ED95D /* CategoryPresentable.swift in Sources */,
-				7982052521063160009ED95D /* CategoriesListInteractor.swift in Sources */,
+				7937B27F210B155A00E87F63 /* IBLRequestCategoryDataManager.swift in Sources */,
 				79E298902108A2CD00EACC80 /* AppDependencies.swift in Sources */,
 				79E2988E2108924D00EACC80 /* RootWireframe.swift in Sources */,
-				79E298922108A52800EACC80 /* IBLRequestCategoryDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +773,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7937B252210B10B000E87F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7937B27C210B10E800E87F63 /* CategoriesListInteractor.swift in Sources */,
+				7937B278210B10DB00E87F63 /* CategoriesListPresenter.swift in Sources */,
+				7937B277210B10DB00E87F63 /* CategoriesItem.swift in Sources */,
+				7937B275210B10D400E87F63 /* CategoriesListViewInterface.swift in Sources */,
+				7937B274210B10CF00E87F63 /* CategoriesListWireframe.swift in Sources */,
+				7937B27A210B10DB00E87F63 /* CategoriesDisplayData.swift in Sources */,
+				7937B276210B10D400E87F63 /* CategoriesViewController.swift in Sources */,
+				7937B27D210B10E800E87F63 /* CategoryPresentable.swift in Sources */,
+				7937B279210B10DB00E87F63 /* CategoriesPresentableCollection.swift in Sources */,
+				7937B27B210B10E200E87F63 /* CategoriesListModuleInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7937B25B210B10B000E87F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7937B267210B10B000E87F63 /* CategoriesListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +848,21 @@
 			isa = PBXTargetDependency;
 			target = 74CFFA9720B8521900E3918D /* Mini iPlayer */;
 			targetProxy = 74CFFAB820B8521A00E3918D /* PBXContainerItemProxy */;
+		};
+		7937B262210B10B000E87F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7937B256210B10B000E87F63 /* CategoriesList */;
+			targetProxy = 7937B261210B10B000E87F63 /* PBXContainerItemProxy */;
+		};
+		7937B264210B10B000E87F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74CFFA9720B8521900E3918D /* Mini iPlayer */;
+			targetProxy = 7937B263210B10B000E87F63 /* PBXContainerItemProxy */;
+		};
+		7937B26B210B10B000E87F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7937B256210B10B000E87F63 /* CategoriesList */;
+			targetProxy = 7937B26A210B10B000E87F63 /* PBXContainerItemProxy */;
 		};
 		7982053B2106358E009ED95D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -953,6 +1135,106 @@
 			};
 			name = Release;
 		};
+		7937B26F210B10B000E87F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CategoriesList/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.CategoriesList;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7937B270210B10B000E87F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XEN7DUD59Z;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CategoriesList/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.CategoriesList;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7937B272210B10B000E87F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPH9EJ7977;
+				INFOPLIST_FILE = CategoriesListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.CategoriesListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini iPlayer.app/Mini iPlayer";
+			};
+			name = Debug;
+		};
+		7937B273210B10B000E87F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPH9EJ7977;
+				INFOPLIST_FILE = CategoriesListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.CategoriesListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mini iPlayer.app/Mini iPlayer";
+			};
+			name = Release;
+		};
 		798205482106358E009ED95D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1088,6 +1370,24 @@
 			buildConfigurations = (
 				74CFFAC720B8521A00E3918D /* Debug */,
 				74CFFAC820B8521A00E3918D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7937B26E210B10B000E87F63 /* Build configuration list for PBXNativeTarget "CategoriesList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7937B26F210B10B000E87F63 /* Debug */,
+				7937B270210B10B000E87F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7937B271210B10B000E87F63 /* Build configuration list for PBXNativeTarget "CategoriesListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7937B272210B10B000E87F63 /* Debug */,
+				7937B273210B10B000E87F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

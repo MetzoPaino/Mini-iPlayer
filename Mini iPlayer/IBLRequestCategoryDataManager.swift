@@ -8,10 +8,7 @@
 
 import Foundation
 import IBLRequest
-
-protocol CategoryDataManager {
-    func getCategories(completion: @escaping ([CategoryPresentable]) -> ())
-}
+import CategoriesList
 
 struct IBLRequestCategoryDataManager: CategoryDataManager {
    
