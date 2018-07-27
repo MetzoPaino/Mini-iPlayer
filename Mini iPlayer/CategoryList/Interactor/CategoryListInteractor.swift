@@ -9,23 +9,13 @@
 import Foundation
 import IBLRequest
 
-//protocol DataCategoryParser {
-////    func parse(data: Data) -> [IBLCategory]
-//}
-
 class CategoryListInteractor {
     
-    private let iblRequest: IBLRequest
-
-    init(iblRequest: IBLRequest) {
-        self.iblRequest = iblRequest
-    }
+    private let iblRequest = IBLRequest()
     
-    func fetchCategories() {
+    func fetchCategories(completion: @escaping ([IBLCategory]) -> ()) {
         iblRequest.getCategories { (categories) in
-            DispatchQueue.main.async {
-
+                completion(categories)
             }
-        }
     }
 }

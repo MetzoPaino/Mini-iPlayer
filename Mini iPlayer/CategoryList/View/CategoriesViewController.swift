@@ -13,18 +13,13 @@ class CategoriesViewController: UIViewController {
 
     @IBOutlet private var collectionView: UICollectionView!
     
-    private let iblRequest = IBLRequest()
-    
-    private let interator = CategoryListInteractor(iblRequest: IBLRequest())
     private let presenter = CategoryListPresenter()
-//    private let router = CategoryListRouter()
-    
     private var categories = [IBLCategory]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        iblRequest.getCategories { (categories) in
+        presenter.updateWithCategories { (categories) in
             DispatchQueue.main.async {
                 self.categories = categories
                 self.collectionView.reloadData()

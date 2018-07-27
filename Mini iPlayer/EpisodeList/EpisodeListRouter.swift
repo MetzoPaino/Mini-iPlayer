@@ -15,7 +15,6 @@ class EpisodeListRouter {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let episodeListViewController = storyboard.instantiateViewController(withIdentifier :"EpisodeListViewController") as! EpisodesViewController
-        episodeListViewController.category = category
         episodeListViewController.presenter = EpisodeListPresenter()
         episodeListViewController.presenter.category = category
         viewController.navigationController?.show(episodeListViewController, sender: nil)

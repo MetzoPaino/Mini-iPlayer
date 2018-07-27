@@ -17,7 +17,7 @@ class EpisodesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = category.title
+        title = presenter.categoryTitle()
         
         presenter.updateWithEpisodes() { (episodes) in
             DispatchQueue.main.async {

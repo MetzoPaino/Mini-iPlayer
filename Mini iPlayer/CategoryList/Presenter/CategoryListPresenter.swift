@@ -13,10 +13,16 @@ import IBLRequest
 class CategoryListPresenter {
     
     private let router = CategoryListRouter()
+    private var interactor = CategoryListInteractor()
 
     func showEpisodeList(for category: IBLCategory, from viewController: UIViewController) {
         router.showEpisodesList(for: category, viewController: viewController)
     }
     
+    func updateWithCategories(completion: @escaping ([IBLCategory]) -> ()) {
+        interactor.fetchCategories() { (categories) in
+            completion(categories)
+        }
+    }
     
 }

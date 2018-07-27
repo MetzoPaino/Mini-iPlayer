@@ -93,7 +93,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f5i-el-4QA" secondAttribute="bottom" id="5OD-9R-3CZ"/>
+                            <constraint firstAttribute="bottom" secondItem="f5i-el-4QA" secondAttribute="bottom" id="5OD-9R-3CZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f5i-el-4QA" secondAttribute="trailing" id="eda-ea-Szf"/>
                             <constraint firstItem="f5i-el-4QA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gB6-dV-qVJ"/>
                             <constraint firstItem="f5i-el-4QA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vdA-w4-8P5"/>
@@ -137,6 +137,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4On-B8-QQe">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="93"/>
+                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.21708443320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -164,7 +165,7 @@
                         <constraints>
                             <constraint firstItem="Y22-u4-co4" firstAttribute="trailing" secondItem="o3S-Nr-TuA" secondAttribute="trailing" id="2FM-6w-Y3q"/>
                             <constraint firstItem="o3S-Nr-TuA" firstAttribute="top" secondItem="Y22-u4-co4" secondAttribute="top" id="aKG-Fk-AJ3"/>
-                            <constraint firstItem="Y22-u4-co4" firstAttribute="bottom" secondItem="o3S-Nr-TuA" secondAttribute="bottom" id="cF3-Sd-SpF"/>
+                            <constraint firstAttribute="bottom" secondItem="o3S-Nr-TuA" secondAttribute="bottom" id="cF3-Sd-SpF"/>
                             <constraint firstItem="o3S-Nr-TuA" firstAttribute="leading" secondItem="Y22-u4-co4" secondAttribute="leading" id="ec3-46-Twa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y22-u4-co4"/>

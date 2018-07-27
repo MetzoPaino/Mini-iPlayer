@@ -20,4 +20,8 @@ class EpisodeListPresenter {
             completion(episodes)
         }
     }
+    
+    func categoryTitle() -> String {
+        return category.title
+    }
 }
