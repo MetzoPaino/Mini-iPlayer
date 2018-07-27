@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7419044720BEB4E200766E67 /* IBLCategories in Resources */ = {isa = PBXBuildFile; fileRef = 7419044620BEB4E200766E67 /* IBLCategories */; };
+		74AAA427210A02D600928CCA /* CategoryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAA426210A02D600928CCA /* CategoryListInteractor.swift */; };
+		74AAA429210A1ACE00928CCA /* CategoryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAA428210A1ACE00928CCA /* CategoryListRouter.swift */; };
 		74ABAAFC21072A1D00FFBF9C /* IBLRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74ABAAF321072A1D00FFBF9C /* IBLRequest.framework */; };
 		74ABAB0321072A1D00FFBF9C /* IBLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ABAB0221072A1D00FFBF9C /* IBLRequestTests.swift */; };
 		74ABAB0521072A1D00FFBF9C /* IBLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 74ABAAF521072A1D00FFBF9C /* IBLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +46,10 @@
 		74CFFAA120B8521900E3918D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFA9F20B8521900E3918D /* Main.storyboard */; };
 		74CFFAA320B8521A00E3918D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA220B8521A00E3918D /* Assets.xcassets */; };
 		74CFFAA620B8521A00E3918D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */; };
+		74D497B5210B21CD00BE56F1 /* CategoryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D497B4210B21CD00BE56F1 /* CategoryListPresenter.swift */; };
+		74D497B7210B2A4C00BE56F1 /* EpisodeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D497B6210B2A4C00BE56F1 /* EpisodeListRouter.swift */; };
+		74D497BE210B46D400BE56F1 /* EpisodeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D497BD210B46D300BE56F1 /* EpisodeListInteractor.swift */; };
+		74D497C0210B494300BE56F1 /* EpisodeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D497BF210B494300BE56F1 /* EpisodeListPresenter.swift */; };
 		74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +128,8 @@
 		748A88B72106142700F739EF /* URLSessionEpisodesProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionEpisodesProviderTests.swift; sourceTree = "<group>"; };
 		748A88BA2106177100F739EF /* EpisodesURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesURLBuilder.swift; sourceTree = "<group>"; };
 		748A88BC2106178900F739EF /* EpisodesURLBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesURLBuilderTests.swift; sourceTree = "<group>"; };
+		74AAA426210A02D600928CCA /* CategoryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListInteractor.swift; sourceTree = "<group>"; };
+		74AAA428210A1ACE00928CCA /* CategoryListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListRouter.swift; sourceTree = "<group>"; };
 		74ABAAF321072A1D00FFBF9C /* IBLRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBLRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ABAAF521072A1D00FFBF9C /* IBLRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBLRequest.h; sourceTree = "<group>"; };
 		74ABAAF621072A1D00FFBF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +152,10 @@
 		74CFFAB220B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74CFFAB720B8521A00E3918D /* Mini iPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mini iPlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CFFABD20B8521A00E3918D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D497B4210B21CD00BE56F1 /* CategoryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListPresenter.swift; sourceTree = "<group>"; };
+		74D497B6210B2A4C00BE56F1 /* EpisodeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListRouter.swift; sourceTree = "<group>"; };
+		74D497BD210B46D300BE56F1 /* EpisodeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListInteractor.swift; sourceTree = "<group>"; };
+		74D497BF210B494300BE56F1 /* EpisodeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListPresenter.swift; sourceTree = "<group>"; };
 		74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +227,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		74AAA4252109FEEB00928CCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74CFFA9D20B8521900E3918D /* CategoriesViewController.swift */,
+				74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		74ABAAF421072A1D00FFBF9C /* IBLRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,9 +297,8 @@
 			children = (
 				7419044620BEB4E200766E67 /* IBLCategories */,
 				74CFFA9B20B8521900E3918D /* AppDelegate.swift */,
-				74CFFA9D20B8521900E3918D /* CategoriesViewController.swift */,
-				74E826DC20F7632600C05F48 /* CategoryCollectionViewCell.swift */,
-				74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */,
+				74D497BB210B2EFF00BE56F1 /* CategoryList */,
+				74D497BC210B348200BE56F1 /* EpisodeList */,
 				74CFFA9F20B8521900E3918D /* Main.storyboard */,
 				74CFFAA220B8521A00E3918D /* Assets.xcassets */,
 				74CFFAA420B8521A00E3918D /* LaunchScreen.storyboard */,
@@ -301,6 +321,52 @@
 				74CFFABD20B8521A00E3918D /* Info.plist */,
 			);
 			path = "Mini iPlayerUITests";
+			sourceTree = "<group>";
+		};
+		74D497B8210B2EE900BE56F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				74D497B4210B21CD00BE56F1 /* CategoryListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		74D497B9210B2EEF00BE56F1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				74AAA428210A1ACE00928CCA /* CategoryListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		74D497BA210B2EF500BE56F1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				74AAA426210A02D600928CCA /* CategoryListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		74D497BB210B2EFF00BE56F1 /* CategoryList */ = {
+			isa = PBXGroup;
+			children = (
+				74D497BA210B2EF500BE56F1 /* Interactor */,
+				74D497B9210B2EEF00BE56F1 /* Router */,
+				74D497B8210B2EE900BE56F1 /* Presenter */,
+				74AAA4252109FEEB00928CCA /* View */,
+			);
+			path = CategoryList;
+			sourceTree = "<group>";
+		};
+		74D497BC210B348200BE56F1 /* EpisodeList */ = {
+			isa = PBXGroup;
+			children = (
+				74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */,
+				74D497BD210B46D300BE56F1 /* EpisodeListInteractor.swift */,
+				74D497BF210B494300BE56F1 /* EpisodeListPresenter.swift */,
+				74D497B6210B2A4C00BE56F1 /* EpisodeListRouter.swift */,
+			);
+			path = EpisodeList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,8 +614,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D497BE210B46D400BE56F1 /* EpisodeListInteractor.swift in Sources */,
+				74D497B7210B2A4C00BE56F1 /* EpisodeListRouter.swift in Sources */,
+				74D497B5210B21CD00BE56F1 /* CategoryListPresenter.swift in Sources */,
 				74CFFA9E20B8521900E3918D /* CategoriesViewController.swift in Sources */,
 				74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */,
+				74AAA429210A1ACE00928CCA /* CategoryListRouter.swift in Sources */,
+				74D497C0210B494300BE56F1 /* EpisodeListPresenter.swift in Sources */,
+				74AAA427210A02D600928CCA /* CategoryListInteractor.swift in Sources */,
 				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
 				74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */,
 			);

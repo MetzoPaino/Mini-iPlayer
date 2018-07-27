@@ -9,5 +9,5 @@
 import Foundation
 
 public struct Episode: Codable {
-    let title: String
+    public let title: String
 }
