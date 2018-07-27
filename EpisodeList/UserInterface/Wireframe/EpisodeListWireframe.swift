@@ -21,15 +21,15 @@ public protocol EpisodeDataManager {
 
 public class CategoriesListWireframe: NSObject {
     
-//    let categoriesListPresenter = CategoriesListPresenter()
+    let episodesListPresenter = EpisodesListPresenter()
     let rootWireframe: EpisodesListViewControllerPresenter
     
 //    var categoriesListViewController: CategoriesViewController?
     
     public init(dataManager: EpisodeDataManager, rootWireframe: EpisodesListViewControllerPresenter) {
         
-//        let episodesListInteractor = EpisodesListInteractor(dataManager: dataManager, output: categoriesListPresenter)
-//        categoriesListPresenter.listInteractor = categoriesListInteractor
+        let episodesListInteractor = EpisodesListInteractor(dataManager: dataManager, output: episodesListPresenter)
+        episodesListPresenter.listInteractor = episodesListInteractor
 //
         self.rootWireframe = rootWireframe
 //        self.categorySelectedHandler = categorySelectedHandler
