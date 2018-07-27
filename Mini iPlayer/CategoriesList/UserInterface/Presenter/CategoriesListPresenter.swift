@@ -8,24 +8,38 @@
 
 import Foundation
 
-class CategoriesListPresenter: CategoriesListModuleInterface, CategoriesListInteractorOutput {
-    
+class CategoriesListPresenter {
+ 
     var listInteractor: CategoriesListInteractorInput?
     var userInterface: CategoriesListViewInterface?
     var listWireframe: CategoriesListWireframe?
-    
-    //MARK: CategoriesListInteractorOutput
-    
+    var collection: CategoriesPresentableCollection?
+
+}
+
+extension CategoriesListPresenter: CategoriesListInteractorOutput {
+
     func retrievedCategories(_ categories: [CategoryPresentable]) {
-        let collection = CategoryPresentableCollection()
-        collection.addCategoryList(categories)
-        userInterface?.showCategoriesDisplayData(collection.collectedDisplayData)
+        collection = CategoriesPresentableCollection()
+        if let catCollection = collection {
+            catCollection.addCategoryList(categories)
+            userInterface?.showCategoriesDisplayData(catCollection.collectedDisplayData)
+        }
     }
-    
-    //MARK: CategoriesListModuleInterface
+
+}
+
+extension CategoriesListPresenter: CategoriesListModuleInterface {
     
     func updateView() {
         listInteractor?.retrieveCategories()
+    }
+    
+    func selected(indexPath: IndexPath) {
+        if let category = collection?.categoryId(for: indexPath),
+            let wireframe = listWireframe {
+            wireframe.selected(category: category)
+        }
     }
     
 }

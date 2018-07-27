@@ -28,7 +28,6 @@ class CategoriesViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         eventHandler?.updateView()
     }
     
@@ -58,6 +57,10 @@ extension CategoriesViewController: CategoriesListViewInterface {
 //MARK: - UITableViewDelegate
 
 extension CategoriesViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        eventHandler?.selected(indexPath: indexPath)
+    }
     
 }
 

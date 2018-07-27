@@ -25,6 +25,10 @@ class CategoriesListWireframe: NSObject {
         rootWireframe?.showRootViewController(viewController, inWindow: window)
     }
     
+    func selected(category: String) {
+        
+    }
+    
     private func categoriesListViewControllerFromStoryboard() -> CategoriesViewController {
         let storyboard = mainStoryboard()
         let viewController = storyboard.instantiateViewController(withIdentifier: CategoriesListViewControllerIdentifier) as! CategoriesViewController

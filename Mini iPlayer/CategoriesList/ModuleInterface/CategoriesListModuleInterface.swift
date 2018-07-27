@@ -10,4 +10,5 @@ import Foundation
 
 protocol CategoriesListModuleInterface {
     func updateView()
+    func selected(indexPath: IndexPath)
 }

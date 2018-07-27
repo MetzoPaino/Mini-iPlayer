@@ -11,12 +11,14 @@ import IBLRequest
 
 struct CategoryPresentable {
     let title: String
+    let id: String
     
     init(category: IBLCategory) {
         self.title = category.title
+        self.id = category.id
     }
     
-    func displayItem() -> CategoriesDisplayItem {
-        return CategoriesDisplayItem(title: title)
+    func categoryItem() -> CategoryTitleProvider & CategoryIdProvider {
+        return CategoriesItem(title: title, id: id)
     }
 }

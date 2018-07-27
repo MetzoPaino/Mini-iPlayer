@@ -24,7 +24,7 @@ class AppDependencies {
     func configureDependencies() {
         let rootWireframe = RootWireframe()
         
-        var categoriesListPresenter = CategoriesListPresenter()
+        let categoriesListPresenter = CategoriesListPresenter()
         let categoriesListDataManager = IBLRequestCategoryDataManager()
         let categoriesListInteractor = CategoriesListInteractor(dataManager: categoriesListDataManager, output: categoriesListPresenter)
         

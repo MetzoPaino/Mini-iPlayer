@@ -9,5 +9,5 @@
 import Foundation
 
 struct CategoriesDisplayData {
-    let categories: [CategoriesDisplayItem]
+    let categories: [CategoryTitleProvider]
 }
