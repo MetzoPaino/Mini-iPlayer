@@ -14,7 +14,6 @@ protocol DataCategoryParser {
 
 struct JSONCategoryParser: DataCategoryParser {
     
-    
     func parse(data: Data) -> [IBLCategory] {
         do {
             let decoder = JSONDecoder()

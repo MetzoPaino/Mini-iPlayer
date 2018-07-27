@@ -17,4 +17,10 @@ class JSONCategoryParserTests: XCTestCase {
         XCTAssertEqual(categories.count, 1)
         XCTAssertEqual(categories.first?.id, "arts")
     }
+    
+    func testBlankArrayOnError() {
+        let data = "sdohwo30939**&^*".data(using: .utf8)
+        let categories = JSONCategoryParser().parse(data: data!)
+        XCTAssertEqual(categories.count, 0)
+    }
 }

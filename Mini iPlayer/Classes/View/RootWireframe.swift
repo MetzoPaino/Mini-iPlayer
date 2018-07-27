@@ -27,8 +27,10 @@ extension RootWireframe: CategoriesListViewControllerPresenter {
 }
 
 extension RootWireframe: CategorySelectedHandler {
+    
     func selected(categoryId: String) {
         
     }
+    
 }
 
