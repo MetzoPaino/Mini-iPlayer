@@ -9,11 +9,7 @@
 import XCTest
 @testable import EpisodeList
 
-class EpisodeListInteractorTests: XCTestCase {
-    
-    struct MockEpisodeTitleProvider: EpisodeTitleProvider {
-        var title: String
-    }
+class EpisodesListInteractorTests: XCTestCase {
     
     class MockEpisodeDataManager: EpisodeDataManager {
         

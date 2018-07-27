@@ -35,12 +35,14 @@
 		7937B2A2210B256200E87F63 /* EpisodeList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7937B28C210B256100E87F63 /* EpisodeList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7937B2AC210B25CE00E87F63 /* EpisodeListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2AB210B25CE00E87F63 /* EpisodeListWireframe.swift */; };
 		7937B2AF210B26F800E87F63 /* EpisodesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2AE210B26F800E87F63 /* EpisodesListInteractor.swift */; };
-		7937B2B3210B2A6800E87F63 /* EpisodeListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2B2210B2A6800E87F63 /* EpisodeListInteractorTests.swift */; };
+		7937B2B3210B2A6800E87F63 /* EpisodesListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2B2210B2A6800E87F63 /* EpisodesListInteractorTests.swift */; };
 		7937B2B5210B2CEF00E87F63 /* EpisodeTitleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2B4210B2CEF00E87F63 /* EpisodeTitleProvider.swift */; };
 		7937B2B8210B314900E87F63 /* EpisodesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2B7210B314900E87F63 /* EpisodesListPresenter.swift */; };
 		7937B2BA210B326100E87F63 /* EpisodesPresentableCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2B9210B326100E87F63 /* EpisodesPresentableCollection.swift */; };
 		7937B2BC210B33AE00E87F63 /* EpisodeDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2BB210B33AE00E87F63 /* EpisodeDisplayData.swift */; };
 		7937B2BF210B34D400E87F63 /* EpisodesListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2BE210B34D400E87F63 /* EpisodesListViewInterface.swift */; };
+		7937B2C1210B495200E87F63 /* EpisodesListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2C0210B495200E87F63 /* EpisodesListPresenterTests.swift */; };
+		7937B2C4210B4C4800E87F63 /* MockTitleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7937B2C3210B4C4800E87F63 /* MockTitleProvider.swift */; };
 		798205392106358E009ED95D /* IBLRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798205302106358E009ED95D /* IBLRequest.framework */; };
 		798205422106358E009ED95D /* IBLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 798205322106358E009ED95D /* IBLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		798205452106358E009ED95D /* IBLRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798205302106358E009ED95D /* IBLRequest.framework */; };
@@ -220,12 +222,14 @@
 		7937B29D210B256200E87F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7937B2AB210B25CE00E87F63 /* EpisodeListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListWireframe.swift; sourceTree = "<group>"; };
 		7937B2AE210B26F800E87F63 /* EpisodesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListInteractor.swift; sourceTree = "<group>"; };
-		7937B2B2210B2A6800E87F63 /* EpisodeListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListInteractorTests.swift; sourceTree = "<group>"; };
+		7937B2B2210B2A6800E87F63 /* EpisodesListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListInteractorTests.swift; sourceTree = "<group>"; };
 		7937B2B4210B2CEF00E87F63 /* EpisodeTitleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTitleProvider.swift; sourceTree = "<group>"; };
 		7937B2B7210B314900E87F63 /* EpisodesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListPresenter.swift; sourceTree = "<group>"; };
 		7937B2B9210B326100E87F63 /* EpisodesPresentableCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesPresentableCollection.swift; sourceTree = "<group>"; };
 		7937B2BB210B33AE00E87F63 /* EpisodeDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDisplayData.swift; sourceTree = "<group>"; };
 		7937B2BE210B34D400E87F63 /* EpisodesListViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListViewInterface.swift; sourceTree = "<group>"; };
+		7937B2C0210B495200E87F63 /* EpisodesListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListPresenterTests.swift; sourceTree = "<group>"; };
+		7937B2C3210B4C4800E87F63 /* MockTitleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTitleProvider.swift; sourceTree = "<group>"; };
 		7982052421063160009ED95D /* CategoriesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListInteractor.swift; sourceTree = "<group>"; };
 		79820526210631FE009ED95D /* CategoryPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresentable.swift; sourceTree = "<group>"; };
 		798205302106358E009ED95D /* IBLRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBLRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -469,7 +473,9 @@
 			isa = PBXGroup;
 			children = (
 				7937B29D210B256200E87F63 /* Info.plist */,
-				7937B2B2210B2A6800E87F63 /* EpisodeListInteractorTests.swift */,
+				7937B2C2210B4C2E00E87F63 /* Mocks */,
+				7937B2B2210B2A6800E87F63 /* EpisodesListInteractorTests.swift */,
+				7937B2C0210B495200E87F63 /* EpisodesListPresenterTests.swift */,
 			);
 			path = EpisodeListTests;
 			sourceTree = "<group>";
@@ -517,6 +523,14 @@
 				7937B2BE210B34D400E87F63 /* EpisodesListViewInterface.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7937B2C2210B4C2E00E87F63 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7937B2C3210B4C4800E87F63 /* MockTitleProvider.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		7982052221062F01009ED95D /* AppLogic */ = {
@@ -1033,7 +1047,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7937B2B3210B2A6800E87F63 /* EpisodeListInteractorTests.swift in Sources */,
+				7937B2C1210B495200E87F63 /* EpisodesListPresenterTests.swift in Sources */,
+				7937B2B3210B2A6800E87F63 /* EpisodesListInteractorTests.swift in Sources */,
+				7937B2C4210B4C4800E87F63 /* MockTitleProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
