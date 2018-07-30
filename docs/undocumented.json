@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/winstc02/Development/XCode/bbc/miniplayer/IBLRequest/Categories/IBLCategory.swift",
+      "line": 11,
+      "symbol": "CategoryIdentifier",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/winstc02/Development/XCode/bbc/miniplayer/IBLRequest/Categories/IBLCategory.swift",
+      "line": 13,
+      "symbol": "IBLCategory",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/winstc02/Development/XCode/bbc/miniplayer/IBLRequest/Categories/IBLCategory.swift",
+      "line": 14,
+      "symbol": "IBLCategory.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/winstc02/Development/XCode/bbc/miniplayer/IBLRequest/Categories/IBLCategory.swift",
+      "line": 15,
+      "symbol": "IBLCategory.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/winstc02/Development/XCode/bbc/miniplayer/IBLRequest/Episodes/IBLEpisode.swift",
+      "line": 11,
+      "symbol": "IBLEpisode",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/winstc02/Development/XCode/bbc/miniplayer/IBLRequest/Episodes/IBLEpisode.swift",
+      "line": 12,
+      "symbol": "IBLEpisode.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/winstc02/Development/XCode/bbc/miniplayer"
+}
