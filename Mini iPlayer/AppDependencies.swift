@@ -13,7 +13,7 @@ import CategoriesList
 class AppDependencies {
     
     let listWireframe: CategoriesListWireframe
-
+    
     init() {
         let rootWireframe = RootWireframe()
         let categoriesListDataManager = IBLRequestCategoryDataManager()

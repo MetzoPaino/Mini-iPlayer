@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 import CategoriesList
+import EpisodeList
 
-struct RootWireframe {
+class RootWireframe {
+    
+    var window: UIWindow?
     
     private func navigationControllerFromWindow(_ window: UIWindow) -> UINavigationController {
         let navigationController = window.rootViewController as! UINavigationController
@@ -21,6 +24,7 @@ struct RootWireframe {
 extension RootWireframe: CategoriesListViewControllerPresenter {
  
     func showRootViewController(_ viewController: UIViewController, inWindow: UIWindow) {
+        self.window = inWindow
         let navigationController = navigationControllerFromWindow(inWindow)
         navigationController.viewControllers = [viewController]
     }
@@ -29,8 +33,17 @@ extension RootWireframe: CategoriesListViewControllerPresenter {
 extension RootWireframe: CategorySelectedHandler {
     
     func selected(categoryId: String) {
-        
+        let dataManager = IBLRequestEpisodeDataManager(categoryID: categoryId)
+        let episodesWireframe = EpisodesListWireframe(dataManager: dataManager, rootWireframe: self)
+        episodesWireframe.presentEpisodesListInterface()
     }
     
+}
+
+extension RootWireframe: EpisodesListViewControllerPresenter {
+    func showViewController(_ viewController: UIViewController) {
+        let navigationController = navigationControllerFromWindow(self.window!)
+        navigationController.pushViewController(viewController, animated: true)
+    }
 }
 
