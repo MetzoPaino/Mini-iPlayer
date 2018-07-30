@@ -8,6 +8,6 @@
 
 import Foundation
 
-public struct Episode: Codable {
+public struct IBLEpisode: Codable {
     public let title: String
 }

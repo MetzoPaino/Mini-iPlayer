@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7418D0CF210F171A00197998 /* EpisodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D0CE210F171A00197998 /* EpisodeEntity.swift */; };
+		7418D0D1210F1C5B00197998 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7418D0D0210F1C5B00197998 /* CategoryEntity.swift */; };
 		7419044720BEB4E200766E67 /* IBLCategories in Resources */ = {isa = PBXBuildFile; fileRef = 7419044620BEB4E200766E67 /* IBLCategories */; };
 		74AAA427210A02D600928CCA /* CategoryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAA426210A02D600928CCA /* CategoryListInteractor.swift */; };
 		74AAA429210A1ACE00928CCA /* CategoryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAA428210A1ACE00928CCA /* CategoryListRouter.swift */; };
@@ -23,7 +25,7 @@
 		74ABAB1621072D2B00FFBF9C /* IBLCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419044C20BEB99000766E67 /* IBLCategory.swift */; };
 		74ABAB1721072D2B00FFBF9C /* CategoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419044E20BEB9EF00766E67 /* CategoriesProvider.swift */; };
 		74ABAB1821072D2B00FFBF9C /* CategoryURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88A62106085800F739EF /* CategoryURLBuilder.swift */; };
-		74ABAB1921072D3200FFBF9C /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* Episode.swift */; };
+		74ABAB1921072D3200FFBF9C /* IBLEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16820FCAA5000B6EBAF /* IBLEpisode.swift */; };
 		74ABAB1A21072D3200FFBF9C /* CategoryHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88B2210611BE00F739EF /* CategoryHighlights.swift */; };
 		74ABAB1B21072D3200FFBF9C /* EpisodesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */; };
 		74ABAB1C21072D3200FFBF9C /* URLSessionEpisodeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A88AC21060F6A00F739EF /* URLSessionEpisodeProvider.swift */; };
@@ -106,6 +108,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7418D0CE210F171A00197998 /* EpisodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEntity.swift; sourceTree = "<group>"; };
+		7418D0D0210F1C5B00197998 /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
 		7419044620BEB4E200766E67 /* IBLCategories */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = IBLCategories; path = ../IBLCategories; sourceTree = "<group>"; };
 		7419044A20BEB65500766E67 /* URLSessionCategoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionCategoryProvider.swift; sourceTree = "<group>"; };
 		7419044C20BEB99000766E67 /* IBLCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLCategory.swift; sourceTree = "<group>"; };
@@ -136,7 +140,7 @@
 		74ABAAFB21072A1D00FFBF9C /* IBLRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBLRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74ABAB0221072A1D00FFBF9C /* IBLRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLRequestTests.swift; sourceTree = "<group>"; };
 		74ABAB0421072A1D00FFBF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74B0E16820FCAA5000B6EBAF /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		74B0E16820FCAA5000B6EBAF /* IBLEpisode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLEpisode.swift; sourceTree = "<group>"; };
 		74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesProvider.swift; sourceTree = "<group>"; };
 		74B0E16E20FCAF9100B6EBAF /* FileEpisodeProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEpisodeProviderTests.swift; sourceTree = "<group>"; };
@@ -200,10 +204,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7418D0D2210F20D600197998 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7418D0D0210F1C5B00197998 /* CategoryEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		748A88AA210608C200F739EF /* Episode */ = {
 			isa = PBXGroup;
 			children = (
-				74B0E16820FCAA5000B6EBAF /* Episode.swift */,
+				74B0E16820FCAA5000B6EBAF /* IBLEpisode.swift */,
 				748A88B2210611BE00F739EF /* CategoryHighlights.swift */,
 				74B0E16C20FCAF0000B6EBAF /* EpisodesProvider.swift */,
 				748A88AC21060F6A00F739EF /* URLSessionEpisodeProvider.swift */,
@@ -350,10 +362,11 @@
 		74D497BB210B2EFF00BE56F1 /* CategoryList */ = {
 			isa = PBXGroup;
 			children = (
-				74D497BA210B2EF500BE56F1 /* Interactor */,
-				74D497B9210B2EEF00BE56F1 /* Router */,
-				74D497B8210B2EE900BE56F1 /* Presenter */,
 				74AAA4252109FEEB00928CCA /* View */,
+				74D497BA210B2EF500BE56F1 /* Interactor */,
+				74D497B8210B2EE900BE56F1 /* Presenter */,
+				7418D0D2210F20D600197998 /* Entity */,
+				74D497B9210B2EEF00BE56F1 /* Router */,
 			);
 			path = CategoryList;
 			sourceTree = "<group>";
@@ -364,6 +377,7 @@
 				74B0E16A20FCAB7B00B6EBAF /* EpisodesViewController.swift */,
 				74D497BD210B46D300BE56F1 /* EpisodeListInteractor.swift */,
 				74D497BF210B494300BE56F1 /* EpisodeListPresenter.swift */,
+				7418D0CE210F171A00197998 /* EpisodeEntity.swift */,
 				74D497B6210B2A4C00BE56F1 /* EpisodeListRouter.swift */,
 			);
 			path = EpisodeList;
@@ -590,7 +604,7 @@
 				74ABAB1C21072D3200FFBF9C /* URLSessionEpisodeProvider.swift in Sources */,
 				74ABAB1D21072D3200FFBF9C /* JSONEpisodeProvider.swift in Sources */,
 				74ABAB1E21072D3200FFBF9C /* EpisodeRequest.swift in Sources */,
-				74ABAB1921072D3200FFBF9C /* Episode.swift in Sources */,
+				74ABAB1921072D3200FFBF9C /* IBLEpisode.swift in Sources */,
 				74ABAB1621072D2B00FFBF9C /* IBLCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,11 +632,13 @@
 				74D497B7210B2A4C00BE56F1 /* EpisodeListRouter.swift in Sources */,
 				74D497B5210B21CD00BE56F1 /* CategoryListPresenter.swift in Sources */,
 				74CFFA9E20B8521900E3918D /* CategoriesViewController.swift in Sources */,
+				7418D0CF210F171A00197998 /* EpisodeEntity.swift in Sources */,
 				74B0E16B20FCAB7B00B6EBAF /* EpisodesViewController.swift in Sources */,
 				74AAA429210A1ACE00928CCA /* CategoryListRouter.swift in Sources */,
 				74D497C0210B494300BE56F1 /* EpisodeListPresenter.swift in Sources */,
 				74AAA427210A02D600928CCA /* CategoryListInteractor.swift in Sources */,
 				74CFFA9C20B8521900E3918D /* AppDelegate.swift in Sources */,
+				7418D0D1210F1C5B00197998 /* CategoryEntity.swift in Sources */,
 				74E826DD20F7632600C05F48 /* CategoryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

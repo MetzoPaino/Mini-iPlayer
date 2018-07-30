@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import IBLRequest
 
 class EpisodeListRouter {
     
-    func showEpisodesList(for category: IBLCategory, viewController: UIViewController) {
+    func showEpisodesList(for category: CategoryEntity, viewController: UIViewController) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let episodeListViewController = storyboard.instantiateViewController(withIdentifier :"EpisodeListViewController") as! EpisodesViewController

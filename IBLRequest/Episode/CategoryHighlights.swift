@@ -9,5 +9,5 @@
 import Foundation
 
 struct CategoryHighlights: Codable {
-    let elements: [Episode]
+    let elements: [IBLEpisode]
 }

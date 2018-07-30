@@ -13,11 +13,30 @@ class EpisodeListInteractor {
     
     private let iblRequest = IBLRequest()
 
-    func fetchEpisodes(for category: IBLCategory, completion: @escaping ([Episode]) -> ()) {
-        iblRequest.getEpisodes(for: category.id) { (episodes) in
+    func fetchEpisodes(for category: CategoryEntity, completion: @escaping ([Episode]) -> ()) {
+        iblRequest.getEpisodes(for: category.id) { (iblEpisodes) in
+
             DispatchQueue.main.async {
-                completion(episodes)
+                completion(EpisodeAdapter().convert(episodes: iblEpisodes))
             }
         }
+    }
+}
+
+struct EpisodeAdapter {
+    
+    func convert(episodes iblEpisodes: [IBLEpisode]) -> [Episode] {
+        var episodes = [Episode]()
+        
+        for iblEpisode in iblEpisodes {
+            let episode = convert(episode: iblEpisode)
+            episodes.append(episode)
+        }
+        return episodes
+    }
+    
+    func convert(episode iblEpisode: IBLEpisode) -> Episode {
+        let episode = Episode(title: iblEpisode.title)
+        return episode
     }
 }

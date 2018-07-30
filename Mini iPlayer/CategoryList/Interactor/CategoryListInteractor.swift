@@ -13,9 +13,27 @@ class CategoryListInteractor {
     
     private let iblRequest = IBLRequest()
     
-    func fetchCategories(completion: @escaping ([IBLCategory]) -> ()) {
+    func fetchCategories(completion: @escaping ([CategoryEntity]) -> ()) {
         iblRequest.getCategories { (categories) in
-                completion(categories)
+                completion(CategoryAdapter().convert(categories: categories))
             }
+    }
+}
+
+struct CategoryAdapter {
+    
+    func convert(categories iblCategories: [IBLCategory]) -> [CategoryEntity] {
+        var episodes = [CategoryEntity]()
+        
+        for iblCategory in iblCategories {
+            let category = convert(category: iblCategory)
+            episodes.append(category)
+        }
+        return episodes
+    }
+    
+    private func convert(category iblCategory: IBLCategory) -> CategoryEntity {
+        let category = CategoryEntity(id: iblCategory.id, title: iblCategory.title)
+        return category
     }
 }

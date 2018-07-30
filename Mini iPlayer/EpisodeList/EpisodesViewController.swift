@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import IBLRequest
 
 class EpisodesViewController: UIViewController {
 

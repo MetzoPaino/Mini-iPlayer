@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import IBLRequest
 
 class CategoriesViewController: UIViewController {
 
     @IBOutlet private var collectionView: UICollectionView!
     
     private let presenter = CategoryListPresenter()
-    private var categories = [IBLCategory]()
+    private var categories = [CategoryEntity]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

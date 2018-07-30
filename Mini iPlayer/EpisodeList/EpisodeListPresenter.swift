@@ -7,11 +7,10 @@
 //
 
 import Foundation
-import IBLRequest
 
 class EpisodeListPresenter {
     
-    var category: IBLCategory!
+    var category: CategoryEntity!
 
     private var interactor = EpisodeListInteractor()
     
